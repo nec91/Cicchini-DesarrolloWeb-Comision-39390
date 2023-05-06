@@ -17,12 +17,12 @@ ul {
 
 /* --------------------------//Header//---------------------- */
 header {
-    background-color: rgb(48, 155, 197);
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: rgb(48, 155, 197);
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header a h1 {
@@ -31,7 +31,6 @@ header a h1 {
   font-style: italic;
   font-size: 30px;
   margin-left: 20px;
-
 }
 
 header nav ul {
@@ -50,7 +49,7 @@ header nav ul {
 /* --------------------------//Main//---------------------- */
 /* ----------------------principal image index --------------------------------- */
 
-main .principalImg{
+main .principalImg {
   height: 900px;
 }
 
@@ -69,9 +68,8 @@ main .principalImg{
   text-align: center;
 }
 
-
 /* --------------------------welcome index ------------------------------------- */
-.welcome img{
+.welcome img {
   width: 647;
   height: 420;
 }
@@ -85,8 +83,8 @@ main .principalImg{
 }
 
 .welcome img {
-    margin: 2%;
-    object-fit: cover;
+  margin: 2%;
+  object-fit: cover;
 }
 
 .welcome .welcomeH4 {
@@ -95,150 +93,276 @@ main .principalImg{
   font-size: xx-large;
   color: rgb(66, 66, 66);
   margin-right: 5%;
-
 }
 
 .welcome .welcomeP {
-    font-family: "Saira", sans-serif;
-    font-style: italic;
-    font-size: x-large;
-    color: rgb(139, 206, 233);
-    margin-right: 5%;
-    margin-top: 5%;
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+  font-size: x-large;
+  color: rgb(139, 206, 233);
+  margin-right: 5%;
+  margin-top: 5%;
 }
 
 /* -------------------------cards index-------------------------------------- */
-.cards{
-    background-color: #e9e9e98a;
+.cards {
+  background-color: #e9e9e98a;
 }
 
-.cards h3{
-    font-family: "Saira", sans-serif;
-    font-style: italic;
-    font-size: 100px;
-    color: rgb(139, 206, 233);
-    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-    text-align: center;
-    padding: 5%;
-    
+.cards h3 {
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+  font-size: 100px;
+  color: rgb(139, 206, 233);
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  text-align: center;
+  padding: 5%;
 }
 
 .cards .cardsFlex {
-    display: flex;
-    justify-content: space-evenly;
-    padding-bottom: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 10%;
 }
 
-.cards div div{
-    width: 350px;
-    height: 280px;
-    border: 2px rgb(16, 69, 184) solid;
-    text-align: end;
-    box-shadow: 8px 8px 14px 0px rgba(72,69,102,0.73);
-    -webkit-box-shadow: 8px 8px 14px 0px rgba(72,69,102,0.73);
-    -moz-box-shadow: 8px 8px 14px 0px rgba(72,69,102,0.73);
+.cards div div {
+  width: 350px;
+  height: 280px;
+  border-radius: 10px;
+  text-align: end;
+  box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
+  -webkit-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
+  -moz-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
 }
 
-.cards div div img{
-    width: 100%;
-    height: 80%;
-    object-fit: cover;
+.cards div div img {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
 }
 
-.cards div div h4{
-    font-family: "Saira", sans-serif;
-    font-style: italic;
-    font-size: large;
-    color: rgb(139, 206, 233);
-    padding-right: 5%;
-    background-color: rgb(16, 69, 184)
+.cards div div h4 {
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+  font-size: large;
+  color: rgb(139, 206, 233);
+  padding-right: 5%;
+  background-color: rgb(16, 69, 184);
 }
 
-.cards div div a{
-    font-family: "Saira", sans-serif;
-    font-style: normal;
-    font-size: medium;
-    color: rgb(66, 66, 66);
-    margin-right: 5%;
+.cards div div a {
+  font-family: "Saira", sans-serif;
+  font-style: normal;
+  font-size: medium;
+  color: rgb(66, 66, 66);
+  margin-right: 5%;
 }
 /* ---------------------------------contacto--------------------------------------- */
-.contact{
-    background-color: #e9e9e98a;
-    height: 900px;
+.contact {
+  background-color: #e9e9e98a;
+  height: 900px;
 }
-.contact h3{
-    font-family: "Saira", sans-serif;
-    font-style: italic;
-    font-size: 50px;
-    color: rgb(139, 206, 233);
-    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-    padding-left: 5%;
+.contact h3 {
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+  font-size: 50px;
+  color: rgb(139, 206, 233);
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  padding-left: 5%;
 }
 
-.contact .textContact{
-    font-family: "Saira", sans-serif;
-    font-style: normal;
-    font-size: medium;
-    color: rgb(66, 66, 66);
-    padding: 10px;
+.contact .textContact {
+  font-family: "Saira", sans-serif;
+  font-style: normal;
+  font-size: medium;
+  color: rgb(66, 66, 66);
+  padding: 10px;
 }
-/* ---------------------------------historia--------------------------------------- */
-.history{
-    background-color: #e9e9e98a;
-    height: 900px;
+/* ---------------------------------Tecnicos--------------------------------------- */
+.history {
+  background-color: #e9e9e98a;
+  height: 900px;
 }
 
 /* ---------------------------------Jugadores--------------------------------------- */
-.players{
-    background-color: #e9e9e98a;
-    height: 900px;
+.players {
+  background-color: #e9e9e98a;
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+  font-size: 75px;
+  color: rgb(139, 206, 233);
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  text-align: center;
+}
+
+.players p {
+  border-top: 1px solid rgb(139, 206, 233, 0.2);
+}
+
+.playersArqueros {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 150px 250px 150px;
+}
+
+.playersArqueros .img1 {
+  grid-row: 1/4;
+}
+.playersArqueros .img2 {
+  grid-row: 1/4;
+}
+.playersArqueros .img3 {
+  grid-row: 1/4;
+}
+.playersDefensores {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 19% 20% 20% 20% 18.5%;
+  grid-template-rows: 200px 200px 230px 230px;
+}
+
+.playersDefensores .img4 {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+.playersDefensores .img8 {
+  grid-row: 1/3;
+  grid-column: 3/5;
+}
+.playersDefensores .img6 {
+  grid-row: 1/4;
+  grid-column: 5/6;
+}
+.playersDefensores .img7 {
+  grid-row: 4/5;
+  grid-column: 5/6;
+}
+
+.playersDefensores .img11 {
+  grid-row: 3/5;
+  grid-column: 3/5;
+}
+
+.playersMediocampistas {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 19% 20% 20% 20% 18.5%;
+  grid-template-rows: 220px 200px 200px 220px;
+}
+
+.playersMediocampistas .img13 {
+  grid-row: 1/5;
+  grid-column: 1/2;
+}
+.playersMediocampistas .img14 {
+  grid-row: 1/4;
+  grid-column: 4/5;
+}
+.playersMediocampistas .img15 {
+  grid-row: 1/4;
+  grid-column: 2/4;
+}
+.playersMediocampistas .img18 {
+  grid-row: 2/5;
+  grid-column: 5/6;
+}
+
+.playersDelanteros {
+  margin-left: 2%;
+  margin-right: 2%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns:  16% 15% 20% 19% 15% 12% ;
+  grid-template-rows: 220px 200px 230px 230px 100px;
+}
+
+.playersDelanteros .img21 {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+.playersDelanteros .img22 {
+  grid-row: 3/4;
+  grid-column: 5/7;
+}
+.playersDelanteros .img23 {
+  grid-row: 1/3;
+  grid-column: 5/7;
+}
+.playersDelanteros .img24 {
+  grid-row: 4/5;
+  grid-column: 5/7;
+}
+.playersDelanteros .img25 {
+  grid-row: 3/5;
+  grid-column: 1/3;
+}
+.playersDelanteros .img26 {
+  grid-row: 1/5;
+  grid-column: 3/5;
+}
+
+.players div a img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+  -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+  -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
 }
 
 /* ---------------------------------Shop--------------------------------------- */
-.shop{
-    background-color: #e9e9e98a;
-    height: 900px;
+.shop {
+  background-color: #e9e9e98a;
+  height: 900px;
 }
 
-
 /* --------------------------//Footer//---------------------- */
-footer{
-    background-color: rgb(48, 155, 197);
+footer {
+  background-color: rgb(48, 155, 197);
 }
 
 footer p {
-    text-align: center;
-    color: rgb(66, 66, 66);
+  text-align: center;
+  color: rgb(66, 66, 66);
 }
 
 footer a h2 {
-    color: rgb(16, 69, 184);
-    font-family: "Saira", sans-serif;
-    font-style: italic;
-    font-size: 30px;
-    margin-left: 20px;
-  }
-
-
-.footerContainer{
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+  color: rgb(16, 69, 184);
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  margin-left: 20px;
 }
 
+.footerContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
 
 .footerContainer ul li a {
-    color: rgb(66, 66, 66);
-    margin: 25px 75px 0px 0px;
-    font-family: "Saira", sans-serif;
-    font-style: normal;
-    font-size: larger;
+  color: rgb(66, 66, 66);
+  margin: 25px 75px 0px 0px;
+  font-family: "Saira", sans-serif;
+  font-style: normal;
+  font-size: larger;
 }
 
 .footerContainer div p {
-    color: rgb(66, 66, 66);
-    font-family: "Saira", sans-serif;
-    font-style: normal;
-    font-size: larger;
+  color: rgb(66, 66, 66);
+  font-family: "Saira", sans-serif;
+  font-style: normal;
+  font-size: larger;
 }
-
