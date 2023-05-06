@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,800&display=swap");
+
+/* --------------------------//RESET//---------------------- */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* --------------------------//Header//---------------------- */
+header {
+    background-color: rgb(48, 155, 197);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a h1 {
+  color: rgb(16, 69, 184);
+  font-family: "Saira", sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  margin-left: 20px;
+
+}
+
+header nav ul {
+  display: flex;
+}
+
+.listHeader {
+  color: rgb(66, 66, 66);
+  margin: 25px 75px 0px 0px;
+  font-family: "Saira", sans-serif;
+  font-style: normal;
+  font-size: larger;
+  text-decoration: none;
+}
+
+/* --------------------------//Main//---------------------- */
+/* ----------------------principal image index --------------------------------- */
+
+main .principalImg{
+  height: 900px;
+}
+
+.principalImg {
+  background-image: url(../img/argchamp.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.principalImg .argChamp {
+  font-family: "Saira", sans-serif;
+  font-style: oblique;
+  font-size: 50px;
+  color: rgb(245, 223, 183);
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  text-align: center;
+}
+
+
+/* --------------------------welcome index ------------------------------------- */
+.welcome img{
+  width: 647;
+  height: 420;
+}
+
+.welcome {
+  height: 25%;
+  background-color: #e9e9e98a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome img {
+    margin: 2%;
+    object-fit: cover;
+}
+
+.welcome .welcomeH4 {
+  font-family: "Saira", sans-serif;
+  font-style: normal;
+  font-size: xx-large;
+  color: rgb(66, 66, 66);
+  margin-right: 5%;
+
+}
+
+.welcome .welcomeP {
+    font-family: "Saira", sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    color: rgb(139, 206, 233);
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+/* -------------------------cards index-------------------------------------- */
+.cards{
+    background-color: #e9e9e98a;
+}
+
+.cards h3{
+    font-family: "Saira", sans-serif;
+    font-style: italic;
+    font-size: 100px;
+    color: rgb(139, 206, 233);
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    text-align: center;
+    padding: 5%;
+    
+}
+
+.cards .cardsFlex {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10%;
+}
+
+.cards div div{
+    width: 350px;
+    height: 280px;
+    border: 2px rgb(16, 69, 184) solid;
+    text-align: end;
+    box-shadow: 8px 8px 14px 0px rgba(72,69,102,0.73);
+    -webkit-box-shadow: 8px 8px 14px 0px rgba(72,69,102,0.73);
+    -moz-box-shadow: 8px 8px 14px 0px rgba(72,69,102,0.73);
+}
+
+.cards div div img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+.cards div div h4{
+    font-family: "Saira", sans-serif;
+    font-style: italic;
+    font-size: large;
+    color: rgb(139, 206, 233);
+    padding-right: 5%;
+    background-color: rgb(16, 69, 184)
+}
+
+.cards div div a{
+    font-family: "Saira", sans-serif;
+    font-style: normal;
+    font-size: medium;
+    color: rgb(66, 66, 66);
+    margin-right: 5%;
+}
+/* ---------------------------------contacto--------------------------------------- */
+.contact{
+    background-color: #e9e9e98a;
+    height: 900px;
+}
+.contact h3{
+    font-family: "Saira", sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    color: rgb(139, 206, 233);
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    padding-left: 5%;
+}
+
+.contact .textContact{
+    font-family: "Saira", sans-serif;
+    font-style: normal;
+    font-size: medium;
+    color: rgb(66, 66, 66);
+    padding: 10px;
+}
+/* ---------------------------------historia--------------------------------------- */
+.history{
+    background-color: #e9e9e98a;
+    height: 900px;
+}
+
+/* ---------------------------------Jugadores--------------------------------------- */
+.players{
+    background-color: #e9e9e98a;
+    height: 900px;
+}
+
+/* ---------------------------------Shop--------------------------------------- */
+.shop{
+    background-color: #e9e9e98a;
+    height: 900px;
+}
+
+
+/* --------------------------//Footer//---------------------- */
+footer{
+    background-color: rgb(48, 155, 197);
+}
+
+footer p {
+    text-align: center;
+    color: rgb(66, 66, 66);
+}
+
+footer a h2 {
+    color: rgb(16, 69, 184);
+    font-family: "Saira", sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    margin-left: 20px;
+  }
+
+
+.footerContainer{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+
+.footerContainer ul li a {
+    color: rgb(66, 66, 66);
+    margin: 25px 75px 0px 0px;
+    font-family: "Saira", sans-serif;
+    font-style: normal;
+    font-size: larger;
+}
+
+.footerContainer div p {
+    color: rgb(66, 66, 66);
+    font-family: "Saira", sans-serif;
+    font-style: normal;
+    font-size: larger;
+}
+
