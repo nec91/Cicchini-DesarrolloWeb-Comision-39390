@@ -20,9 +20,6 @@ header {
   background-color: rgb(48, 155, 197);
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 header a h1 {
@@ -32,18 +29,21 @@ header a h1 {
   font-size: 30px;
   margin-left: 20px;
 }
-
-header nav ul {
-  display: flex;
+.navbar-brand H1:hover{
+  color: rgb(66, 66, 66);
+  transition: 1s;
 }
 
-.listHeader {
+.nav-link {
   color: rgb(66, 66, 66);
-  margin: 25px 75px 0px 0px;
   font-family: "Saira", sans-serif;
   font-style: normal;
   font-size: larger;
   text-decoration: none;
+}
+ .nav-link:hover{
+  color: rgb(16, 69, 184);
+  transition: 1s;
 }
 
 /* --------------------------//Main//---------------------- */
@@ -69,10 +69,6 @@ main .principalImg {
 }
 
 /* --------------------------welcome index ------------------------------------- */
-.welcome img {
-  width: 647;
-  height: 420;
-}
 
 .welcome {
   height: 25%;
@@ -83,6 +79,8 @@ main .principalImg {
 }
 
 .welcome img {
+  width: 100%;
+  height: 100%;
   margin: 2%;
   object-fit: cover;
 }
@@ -157,6 +155,11 @@ main .principalImg {
   color: rgb(66, 66, 66);
   margin-right: 5%;
 }
+.cards div div:hover{
+  background-color:rgb(139, 206, 233);
+  transition: 0.5s;
+  }
+
 /* ---------------------------------contacto--------------------------------------- */
 .contact {
   background-color: #e9e9e98a;
@@ -340,6 +343,8 @@ footer {
 footer p {
   text-align: center;
   color: rgb(66, 66, 66);
+  margin: 0px;
+  padding: 0px;
 }
 
 footer a h2 {
@@ -348,6 +353,10 @@ footer a h2 {
   font-style: italic;
   font-size: 30px;
   margin-left: 20px;
+}
+footer a h2:hover{
+    color: rgb(66, 66, 66);
+  transition: 1s;
 }
 
 .footerContainer {
@@ -363,10 +372,69 @@ footer a h2 {
   font-style: normal;
   font-size: larger;
 }
+.footerContainer ul li a:hover{
+  color: rgb(16, 69, 184);
+  transition: 1s;
+}
 
 .footerContainer div p {
   color: rgb(66, 66, 66);
   font-family: "Saira", sans-serif;
   font-style: normal;
   font-size: larger;
+}
+
+
+/*! ---------------------------------------Media query-------------------------- */
+
+/* --------------------------//Main//---------------------- */
+/* ---------------------- image index --------------------------------- */
+
+@media screen and (max-width:1430px ){
+    .cardsFlex {
+      flex-direction: column;
+    }
+    .cardsFlex div {
+      justify-content:space-between;
+      margin: 2%;
+    }
+    .cardsFlex div div {
+      justify-content: center;
+      margin: 2%;
+    }
+}
+
+@media screen and (max-width:1350px ){
+    .welcome {
+      flex-direction: column-reverse
+    }
+
+}
+
+@media screen and (max-width:880px ){
+    .cards h3{
+       font-size: 50px; 
+    }
+    footer a h2{
+      font-size: 20px;
+    }
+    .footerContainer ul li a{
+      font-size: 10px;
+    }
+    .footerContainer div p{
+      font-size: 10px;
+    }
+}
+
+@media screen and (max-width:450px ){
+  .cards h3{
+     font-size: 50px; 
+  }
+}
+
+@media screen and (max-width:375px ){
+  /* .cards div div {
+    width: 250px;
+    height: 180px;
+  } */
 }
