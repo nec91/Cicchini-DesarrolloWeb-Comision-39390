@@ -122,6 +122,7 @@ main .principalImg {
 .cards .cardsFlex {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   padding-bottom: 10%;
 }
 
@@ -133,6 +134,7 @@ main .principalImg {
   box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
   -webkit-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
   -moz-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
+  margin: 2%;
 }
 
 .cards div div img {
@@ -476,22 +478,6 @@ footer a h2:hover {
 }
 
 /*! ---------------------------------------Media query-------------------------- */
-
-
-@media screen and (max-width: 1430px) {
-  .cardsFlex {
-    flex-direction: column;
-  }
-  .cardsFlex div {
-    justify-content: space-between;
-    margin: 2%;
-  }
-  .cardsFlex div div {
-    justify-content: center;
-    margin: 2%;
-  }
-}
-
 @media screen and (max-width: 1350px) {
   .welcome {
     flex-direction: column-reverse;
@@ -516,12 +502,13 @@ footer a h2:hover {
   }
   .playersArqueros{
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows:  300px 330px;
+    grid-template-rows:  300px 300px;
   }
   .playersArqueros .gridItem{
     grid-column: span 1;
     grid-row: span 1;
   }
+
   .playersDefensores{
     grid-template-columns: repeat(2,1fr);
     grid-template-rows:  300px 330px 330px 330px 330px;
@@ -530,6 +517,7 @@ footer a h2:hover {
     grid-column: span 1;
     grid-row: span 1;
   }
+
   .playersMediocampistas{
     grid-template-columns: repeat(2,1fr);
     grid-template-rows:  300px 330px 330px 330px ;
@@ -547,10 +535,6 @@ footer a h2:hover {
     grid-column: span 1;
     grid-row: span 1;
   }
-  /* .textContact{
-    height:200px ;
-    width:250px ;
-  } */
 }
 
 @media screen and (max-width: 450px) {
