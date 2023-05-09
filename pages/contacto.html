@@ -18,7 +18,9 @@
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html"><H1>La Scaloneta ⭐⭐⭐</H1></a>
+                <a class="navbar-brand" href="../index.html">
+                    <H1>La Scaloneta ⭐⭐⭐</H1>
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -45,41 +47,64 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="contact">
-            <h3>Contáctate con nosotros!</h3>
-            <p class="textContact">Completa la informacion requerida y solicita toda la info relacionada sobre La Scaloneta!</p>
-            <form action="">
-                <div class="textContact">
-                    <label for="name">Nombre: </label>
-                    <input type="text" name="name" id="name">
+    <main class="contact">
+        <section >
+        </section>
+        <section class="contactForm">
+            
+            <form class="form">
+                <h3>Contáctate con nosotros!</h3>
+                <p class="textContact">Completa tus datos y recibí toda la info sobre La
+                    Scaloneta!</p>
+                <div class="formContainer">
+                    <div class="formGroup">
+                        <input type="text" id="name" class="formInput" placeholder=" ">
+                        <label for="name" class="formLabel">Nombre</label>
+                        <span class="formLine"></span>
+                    </div>
+                    <div class="formGroup">
+                        <input type="text" id="lastName" class="formInput" placeholder=" ">
+                        <label for="lastName" class="formLabel">Apellido</label>
+                        <span class="formLine"></span>
+                    </div>
+                    <div class="formGroup">
+                        <input type="email" id="email" class="formInput" placeholder=" ">
+                        <label for="lastName" class="formLabel">Correo Electrónico</label>
+                        <span class="formLine"></span>
+                    </div>
+                    <input type="submit" class="formSubmit" value="Enviar">
                 </div>
-                <div class="textContact">
-                    <label for="lastName">Apellido: </label>
-                    <input type="text" name="lname" id="lname">
-                </div>
-                <div class="textContact">
-                    <label for="lastName">Edad: </label>
-                    <input type="number" name="age" id="age" min="1" max="100">
-                </div>
-                <div class="textContact">
-                    <label for="lastName">Correo Electrónico: </label>
-                    <input type="email" name="mail" id="mail">
-                </div>
-                <div class="textContact">
-                    <h4>Que deseas saber?</h4>
-                    <textarea name="" id="" cols="50" rows="20"></textarea>
-                </div>
-                <div class="textContact">
-                    <input type="submit">
-                    <input type="reset">
-                </div>
+
             </form>
-            <!-- <iframe
+        </section>
+        <!-- <form class="form">
+                <div>
+                    <div class="textContact">
+                        <label for="name">Nombre: </label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="textContact">
+                        <label for="lastName">Apellido: </label>
+                        <input type="text" name="lname" id="lname">
+                    </div>
+                    <div class="textContact">
+                        <label for="lastName">Correo Electrónico: </label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+                    <div class="textContact">
+                        <h4>Que deseas saber?</h4>
+                        <textarea name="" id="" cols="50" rows="20"></textarea>
+                    </div>
+                    <div class="textContact">
+                        <input type="submit">
+                        <input type="reset">
+                    </div>
+                </div>
+            </form> -->
+        <!-- <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3277.180483207747!2d-58.53010432343688!3d-34.776231466630925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccfdee199c2e9%3A0xce5afb4539af59ec!2sAsociaci%C3%B3n%20del%20F%C3%BAtbol%20Argentino%20(A.F.A.)%20%5BPredio%20Julio%20Humberto%20Grondona%5D!5e0!3m2!1ses!2sar!4v1681778010504!5m2!1ses!2sar"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-        </section>
 
     </main>
 
@@ -105,8 +130,8 @@
         <p>© 2023 LaScaloneta, todos los derechos reservados.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

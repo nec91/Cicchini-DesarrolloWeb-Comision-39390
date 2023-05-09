@@ -166,27 +166,114 @@ main .principalImg {
 
 /* ---------------------------------contacto--------------------------------------- */
 .contact {
-  background-color: #e9e9e98a;
-  height: 950px;
-}
-.contact h3 {
   font-family: "Saira", sans-serif;
-  font-style: italic;
-  font-size: 50px;
-  color: rgb(139, 206, 233);
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-  padding-left: 5%;
+  background-color: #e9e9e98a;
 }
 
-.contact .textContact {
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-size: medium;
-  color: rgb(66, 66, 66);
-  padding: 10px;
+.contact h3 {
+  text-align: center;
+  font-style: italic;
+  font-size: 2rem;
+  color: rgb(139, 206, 233);
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
+.contactForm{
+  display: flex;
+  min-height: 100vh;
+}
+.form{
+  background-color: white;
+  margin:auto;
+  width: 90%;
+  max-width: 400px;
+  padding: 4.5em 3em;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px -5px rgb(0 0 0 /30%);
+  text-align: center;
+}
+.textContact {
+  text-align: center;
+  font-style: normal;
+  font-size: 1rem;
+  color: rgb(66, 66, 66);
+  margin-bottom: 0.5em;
+}
+
+.formContainer{
+  margin-top: 3em;
+  display: grid;
+  gap: 2.5em;
+}
+
+.formGroup{
+  position: relative;
+  --color: #5757577e;
+}
+
+.formInput{
+  width: 100%;
+  background: none;
+  color: #706c6c;
+  font-size: 1rem;
+  padding: 0.6em 0.3em;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid var(--color);
+  font-family: "Saira", sans-serif;
+}
+
+.formInput:not(:placeholder-shown){
+  color: #4d4646;
+}
+
+.formInput:focus + .formLabel,
+.formInput:not(:placeholder-shown) + .formLabel{
+  transform: translateY(-12px) scale(.7);
+  transform-origin: left top;
+  color:rgb(139, 206, 233);
+}
+
+.formLabel{
+  color: var(--color);
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  transform: translateY(10px);
+  transition: transform 0.5s, color 0.3s;
+}
+
+.formSubmit{
+  background-color:rgb(48, 155, 197) ;
+  color: #fff;
+  font-family: "Saira", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  padding: 0.8em 0;
+  border: none;
+  border-radius:  0.5em;
+}
+
+.formLine{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color:rgb(48, 155, 197) ;
+  transform: scale(0);
+  transform: left bottom;
+  transition: transform 0.4s;
+}
+
+.formInput:focus ~ .formLine,
+.formInput:not(:placeholder-shown) ~  .formLine{
+  transform: scale(1);
+}
+
+
 /* ---------------------------------Tecnicos--------------------------------------- */
-.history {
+.tecnico {
   background-color: #e9e9e98a;
   height: 900px;
 }
@@ -333,8 +420,8 @@ main .principalImg {
   -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
 }
 
-/* ---------------------------------Shop--------------------------------------- */
-.shop {
+/* ---------------------------------historia--------------------------------------- */
+.historia {
   background-color: #e9e9e98a;
   height: 900px;
 }
@@ -390,8 +477,6 @@ footer a h2:hover {
 
 /*! ---------------------------------------Media query-------------------------- */
 
-/* --------------------------//Main//---------------------- */
-/* ---------------------- image index --------------------------------- */
 
 @media screen and (max-width: 1430px) {
   .cardsFlex {
@@ -426,11 +511,83 @@ footer a h2:hover {
   .footerContainer div p {
     font-size: 10px;
   }
+  .players p{
+    font-size: 50px;
+  }
+  .playersArqueros{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:  300px 330px;
+  }
+  .playersArqueros .gridItem{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .playersDefensores{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:  300px 330px 330px 330px 330px;
+  }
+  .playersDefensores .gridItem{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .playersMediocampistas{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:  300px 330px 330px 330px ;
+  }
+  .playersMediocampistas .gridItem{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .playersDelanteros{
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows:  300px 330px 330px ;
+    padding: 5%;
+  }
+  .playersDelanteros .gridItem{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  /* .textContact{
+    height:200px ;
+    width:250px ;
+  } */
 }
 
 @media screen and (max-width: 450px) {
   .cards h3 {
     font-size: 50px;
+  }
+  .players p{
+    font-size: 30px;
+  }
+  .playersArqueros{ 
+    grid-template-columns: repeat(1,1fr);
+  }
+  .playersArqueros .gridItem{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .playersDefensores{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .playersDefensores .gridItem{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .playersMediocampistas{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .playersMediocampistas .gridItem{
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .playersDelanteros{
+    grid-template-columns: repeat(1,1fr);
+    padding: 5%;
+  }
+  .playersDelanteros .gridItem{
+    grid-column: span 1;
+    grid-row: span 1;
   }
 }
 
