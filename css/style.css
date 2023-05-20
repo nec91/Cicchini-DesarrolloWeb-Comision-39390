@@ -1,685 +1,514 @@
 @import url("https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500;1,800&display=swap");
-
-/* --------------------------//RESET//---------------------- */
 * {
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 ul {
   text-decoration: none;
-  list-style: none;
-}
+  list-style: none; }
 
-/* --------------------------//Header//---------------------- */
 header {
-  background-color: rgb(48, 155, 197);
+  background-color: #309bc5;
   position: sticky;
-  top: 0;
-}
-
-header a h1 {
-  color: rgb(16, 69, 184);
-  font-family: "Saira", sans-serif;
-  font-style: italic;
-  font-size: 30px;
-  margin-left: 20px;
-}
-.navbar-brand H1:hover {
-  color: rgb(66, 66, 66);
-  transition: 1s;
-}
+  top: 0; }
+  header h1 {
+    color: #1045b8;
+    font-family: "Saira", sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    margin-left: 20px; }
+    header h1:hover {
+      color: #424242;
+      transition: 1s; }
 
 .nav-link {
-  color: rgb(66, 66, 66);
+  color: #424242;
   font-family: "Saira", sans-serif;
   font-style: normal;
   font-size: larger;
-  text-decoration: none;
-}
-.nav-link:hover {
-  color: rgb(16, 69, 184);
-  transition: 1s;
-}
-
-/* --------------------------//Main//---------------------- */
-/* ----------------------principal image index --------------------------------- */
+  text-decoration: none; }
+  .nav-link:hover {
+    color: #1045b8;
+    transition: 1s; }
 
 main .principalImg {
   height: 900px;
-}
-
-.principalImg {
   background-image: url(../img/argchamp.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-}
-.principalImg .argChamp {
-  font-family: "Saira", sans-serif;
-  font-style: oblique;
-  font-size: 50px;
-  color: rgb(245, 223, 183);
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-  text-align: center;
-  padding: 2%;
-}
+  background-position: center; }
+  main .principalImg .argChamp {
+    font-family: "Saira", sans-serif;
+    font-style: oblique;
+    font-size: 50px;
+    color: #f5dfb7;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    text-align: center;
+    padding: 2%; }
 
-/* --------------------------welcome index ------------------------------------- */
-
-.welcome {
+main .welcome {
   height: 25%;
   background-color: #e9e9e98a;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-}
+  align-items: center; }
+  main .welcome img {
+    width: 100%;
+    height: 100%;
+    margin: 2%;
+    object-fit: cover; }
+  main .welcome div .welcomeH4 {
+    font-family: "Saira", sans-serif;
+    font-style: normal;
+    font-size: xx-large;
+    color: #424242;
+    margin-right: 5%;
+    text-align: center; }
+  main .welcome div .welcomeP {
+    font-family: "Saira", sans-serif;
+    font-style: italic;
+    font-size: x-large;
+    color: #8bcee9;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: center; }
 
-.welcome img {
-  width: 100%;
-  height: 100%;
-  margin: 2%;
-  object-fit: cover;
-}
+main .cards {
+  background-color: #e9e9e98a; }
+  main .cards h3 {
+    font-family: "Saira", sans-serif;
+    font-style: italic;
+    font-size: 100px;
+    color: #8bcee9;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    text-align: center;
+    padding: 5%; }
+  main .cards .cardsFlex {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 10%; }
+    main .cards .cardsFlex div {
+      width: 350px;
+      height: 280px;
+      border-radius: 10px;
+      text-align: end;
+      box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
+      -webkit-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
+      -moz-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
+      margin: 2%; }
+      main .cards .cardsFlex div img {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; }
+      main .cards .cardsFlex div h4 {
+        font-family: "Saira", sans-serif;
+        font-style: italic;
+        font-size: large;
+        color: #8bcee9;
+        padding-right: 5%;
+        background-color: #1045b8; }
+      main .cards .cardsFlex div a {
+        font-family: "Saira", sans-serif;
+        font-style: normal;
+        font-size: medium;
+        color: #424242;
+        margin-right: 5%; }
+      main .cards .cardsFlex div:hover {
+        background-color: #8bcee9;
+        transition: 0.5s; }
 
-.welcome .welcomeH4 {
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-size: xx-large;
-  color: rgb(66, 66, 66);
-  margin-right: 5%;
-}
-
-.welcome .welcomeP {
-  font-family: "Saira", sans-serif;
-  font-style: italic;
-  font-size: x-large;
-  color: rgb(139, 206, 233);
-  margin-right: 5%;
-  margin-top: 5%;
-}
-
-/* -------------------------cards index-------------------------------------- */
-.cards {
-  background-color: #e9e9e98a;
-}
-
-.cards h3 {
-  font-family: "Saira", sans-serif;
-  font-style: italic;
-  font-size: 100px;
-  color: rgb(139, 206, 233);
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-  text-align: center;
-  padding: 5%;
-}
-
-.cards .cardsFlex {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding-bottom: 10%;
-}
-
-.cards div div {
-  width: 350px;
-  height: 280px;
-  border-radius: 10px;
-  text-align: end;
-  box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
-  -webkit-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
-  -moz-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
-  margin: 2%;
-}
-
-.cards div div img {
-  width: 100%;
-  height: 80%;
-  object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-.cards div div h4 {
-  font-family: "Saira", sans-serif;
-  font-style: italic;
-  font-size: large;
-  color: rgb(139, 206, 233);
-  padding-right: 5%;
-  background-color: rgb(16, 69, 184);
-}
-
-.cards div div a {
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-size: medium;
-  color: rgb(66, 66, 66);
-  margin-right: 5%;
-}
-.cards div div:hover {
-  background-color: rgb(139, 206, 233);
-  transition: 0.5s;
-}
-
-/* ---------------------------------contacto--------------------------------------- */
 .contact {
   font-family: "Saira", sans-serif;
-  background-color: #e9e9e98a;
-}
+  background-color: #e9e9e98a; }
+  .contact .contactForm {
+    display: flex;
+    min-height: 100vh; }
+    .contact .contactForm .form {
+      background-color: white;
+      margin: auto;
+      width: 90%;
+      max-width: 400px;
+      padding: 4.5em 3em;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px -5px rgba(0, 0, 0, 0.3);
+      text-align: center; }
+      .contact .contactForm .form h3 {
+        text-align: center;
+        font-style: italic;
+        font-size: 2rem;
+        color: #8bcee9;
+        text-shadow: 0 0 3px #000000, 0 0 5px #000000; }
+      .contact .contactForm .form .textContact {
+        text-align: center;
+        font-style: normal;
+        font-size: 1rem;
+        color: #424242;
+        margin-bottom: 0.5em; }
+      .contact .contactForm .form .formContainer {
+        margin-top: 3em;
+        display: grid;
+        gap: 2.5em; }
+        .contact .contactForm .form .formContainer .formGroup {
+          position: relative;
+          --color: #5757577e; }
+          .contact .contactForm .form .formContainer .formGroup .formInput {
+            width: 100%;
+            background: none;
+            color: #706c6c;
+            font-size: 1rem;
+            padding: 0.6em 0.3em;
+            border: none;
+            outline: none;
+            border-bottom: 1px solid var(--color);
+            font-family: "Saira", sans-serif; }
+            .contact .contactForm .form .formContainer .formGroup .formInput:not(:placeholder-shown) {
+              color: #4d4646; }
+            .contact .contactForm .form .formContainer .formGroup .formInput:focus + .formLabel,
+            .contact .contactForm .form .formContainer .formGroup .formInput:not(:placeholder-shown) + .formLabel {
+              transform: translateY(-12px) scale(0.7);
+              transform-origin: left top;
+              color: #8bcee9; }
+            .contact .contactForm .form .formContainer .formGroup .formInput:focus ~ .formLine,
+            .contact .contactForm .form .formContainer .formGroup .formInput:not(:placeholder-shown) ~ .formLine {
+              transform: scale(1); }
+          .contact .contactForm .form .formContainer .formGroup .formLabel {
+            color: var(--color);
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 5px;
+            transform: translateY(10px);
+            transition: transform 0.5s, color 0.3s; }
+          .contact .contactForm .form .formContainer .formGroup .formLine {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: #309bc5;
+            transform: scale(0);
+            transform: left bottom;
+            transition: transform 0.4s; }
+      .contact .contactForm .form .formSubmit {
+        background-color: #309bc5;
+        color: #fff;
+        font-family: "Saira", sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 0.8em 0;
+        border: none;
+        border-radius: 0.5em; }
 
-.contact h3 {
-  text-align: center;
-  font-style: italic;
-  font-size: 2rem;
-  color: rgb(139, 206, 233);
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-}
-.contactForm {
-  display: flex;
-  min-height: 100vh;
-}
-.form {
-  background-color: white;
-  margin: auto;
-  width: 90%;
-  max-width: 400px;
-  padding: 4.5em 3em;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px -5px rgb(0 0 0 /30%);
-  text-align: center;
-}
-.textContact {
-  text-align: center;
-  font-style: normal;
-  font-size: 1rem;
-  color: rgb(66, 66, 66);
-  margin-bottom: 0.5em;
-}
-
-.formContainer {
-  margin-top: 3em;
-  display: grid;
-  gap: 2.5em;
-}
-
-.formGroup {
-  position: relative;
-  --color: #5757577e;
-}
-
-.formInput {
-  width: 100%;
-  background: none;
-  color: #706c6c;
-  font-size: 1rem;
-  padding: 0.6em 0.3em;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid var(--color);
-  font-family: "Saira", sans-serif;
-}
-
-.formInput:not(:placeholder-shown) {
-  color: #4d4646;
-}
-
-.formInput:focus + .formLabel,
-.formInput:not(:placeholder-shown) + .formLabel {
-  transform: translateY(-12px) scale(0.7);
-  transform-origin: left top;
-  color: rgb(139, 206, 233);
-}
-
-.formLabel {
-  color: var(--color);
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  left: 5px;
-  transform: translateY(10px);
-  transition: transform 0.5s, color 0.3s;
-}
-
-.formSubmit {
-  background-color: rgb(48, 155, 197);
-  color: #fff;
-  font-family: "Saira", sans-serif;
-  font-weight: 300;
-  font-size: 1rem;
-  padding: 0.8em 0;
-  border: none;
-  border-radius: 0.5em;
-}
-
-.formLine {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 1px;
-  background-color: rgb(48, 155, 197);
-  transform: scale(0);
-  transform: left bottom;
-  transition: transform 0.4s;
-}
-
-.formInput:focus ~ .formLine,
-.formInput:not(:placeholder-shown) ~ .formLine {
-  transform: scale(1);
-}
-
-/* ---------------------------------Tecnicos--------------------------------------- */
-.tecnico {
+.historia {
   background-color: #e9e9e98a;
   align-items: center;
   font-family: "Saira", sans-serif;
-  text-align: center;
-}
+  text-align: center; }
 
-.tecnico h3 {
-  border-top: 1px solid rgb(139, 206, 233, 0.2);
-  color: rgb(139, 206, 233);
+section h3 {
+  border-top: 1px solid rgba(139, 206, 233, 0.2);
+  color: #8bcee9;
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
   text-align: center;
   font-size: 3em;
-  padding: 0.5em;
-}
+  padding: 0.5em; }
 
-.tecnico .tecnicoFlex {
+section .mundial {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
-}
+  flex-wrap: wrap; }
+  section .mundial div {
+    width: 700px;
+    height: 450px; }
+    section .mundial div img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+      -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+      -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
+    section .mundial div h4 {
+      font-style: normal;
+      font-size: 2em;
+      color: #424242; }
+    section .mundial div p {
+      font-style: normal;
+      font-size: 1em;
+      color: #424242;
+      padding: 1em; }
 
-.tecnico .tecnicoFlex div {
-  width: 700px;
-  height: 450px;
-}
+iframe {
+  margin-bottom: 5%; }
 
-.tecnico .tecnicoFlex div img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-  -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-  -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-}
-
-.tecnico div h4 {
-  font-style: normal;
-  font-size: 2em;
-  color: rgb(66, 66, 66);
-}
-
-.tecnico div p {
-  font-style: normal;
-  font-size: 1em;
-  color: rgb(66, 66, 66);
-  padding: 1em;
-}
-
-/* ---------------------------------Jugadores--------------------------------------- */
 .players {
   background-color: #e9e9e98a;
   font-family: "Saira", sans-serif;
   font-style: italic;
   font-size: 75px;
-  color: rgb(139, 206, 233);
+  color: #8bcee9;
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-  text-align: center;
-}
+  text-align: center; }
+  .players p {
+    border-top: 1px solid rgba(139, 206, 233, 0.2); }
+  .players div a img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+    -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+    -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
+  .players .playersArqueros {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10%;
+    display: grid;
+    justify-content: center;
+    grid-gap: 0.5rem;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 150px 250px 150px; }
+    .players .playersArqueros .img1 {
+      grid-row: 1/4; }
+    .players .playersArqueros .img2 {
+      grid-row: 1/4; }
+    .players .playersArqueros .img3 {
+      grid-row: 1/4; }
+  .players .playersDefensores {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10%;
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-template-columns: 19% 20% 20% 20% 18.5%;
+    grid-template-rows: 200px 200px 230px 230px; }
+    .players .playersDefensores .img4 {
+      grid-row: 1/3;
+      grid-column: 1/3; }
+    .players .playersDefensores .img8 {
+      grid-row: 1/3;
+      grid-column: 3/5; }
+    .players .playersDefensores .img6 {
+      grid-row: 1/4;
+      grid-column: 5/6; }
+    .players .playersDefensores .img7 {
+      grid-row: 4/5;
+      grid-column: 5/6; }
+    .players .playersDefensores .img11 {
+      grid-row: 3/5;
+      grid-column: 3/5; }
+  .players .playersMediocampistas {
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10%;
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-template-columns: 19% 20% 20% 20% 18.5%;
+    grid-template-rows: 220px 200px 200px 220px; }
+    .players .playersMediocampistas .img13 {
+      grid-row: 1/5;
+      grid-column: 1/2; }
+    .players .playersMediocampistas .img14 {
+      grid-row: 1/4;
+      grid-column: 4/5; }
+    .players .playersMediocampistas .img15 {
+      grid-row: 1/4;
+      grid-column: 2/4; }
+    .players .playersMediocampistas .img18 {
+      grid-row: 2/5;
+      grid-column: 5/6; }
+  .players .playersDelanteros {
+    margin-left: 2%;
+    margin-right: 2%;
+    display: grid;
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-template-columns: 16% 15% 20% 19% 15% 12%;
+    grid-template-rows: 220px 200px 230px 230px 100px; }
+    .players .playersDelanteros .img21 {
+      grid-row: 1/3;
+      grid-column: 1/3; }
+    .players .playersDelanteros .img22 {
+      grid-row: 3/4;
+      grid-column: 5/7; }
+    .players .playersDelanteros .img23 {
+      grid-row: 1/3;
+      grid-column: 5/7; }
+    .players .playersDelanteros .img24 {
+      grid-row: 4/5;
+      grid-column: 5/7; }
+    .players .playersDelanteros .img25 {
+      grid-row: 3/5;
+      grid-column: 1/3; }
+    .players .playersDelanteros .img26 {
+      grid-row: 1/5;
+      grid-column: 3/5; }
 
-.players p {
-  border-top: 1px solid rgb(139, 206, 233, 0.2);
-}
-
-.playersArqueros {
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 10%;
-  display: grid;
-  justify-content: center;
-  grid-gap: 0.5rem;
-  grid-template-columns: 30% 40% 30%;
-  grid-template-rows: 150px 250px 150px;
-}
-
-.playersArqueros .img1 {
-  grid-row: 1/4;
-}
-.playersArqueros .img2 {
-  grid-row: 1/4;
-}
-.playersArqueros .img3 {
-  grid-row: 1/4;
-}
-.playersDefensores {
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 10%;
-  display: grid;
-  justify-content: center;
-  grid-gap: 1rem;
-  grid-template-columns: 19% 20% 20% 20% 18.5%;
-  grid-template-rows: 200px 200px 230px 230px;
-}
-
-.playersDefensores .img4 {
-  grid-row: 1/3;
-  grid-column: 1/3;
-}
-.playersDefensores .img8 {
-  grid-row: 1/3;
-  grid-column: 3/5;
-}
-.playersDefensores .img6 {
-  grid-row: 1/4;
-  grid-column: 5/6;
-}
-.playersDefensores .img7 {
-  grid-row: 4/5;
-  grid-column: 5/6;
-}
-
-.playersDefensores .img11 {
-  grid-row: 3/5;
-  grid-column: 3/5;
-}
-
-.playersMediocampistas {
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 10%;
-  display: grid;
-  justify-content: center;
-  grid-gap: 1rem;
-  grid-template-columns: 19% 20% 20% 20% 18.5%;
-  grid-template-rows: 220px 200px 200px 220px;
-}
-
-.playersMediocampistas .img13 {
-  grid-row: 1/5;
-  grid-column: 1/2;
-}
-.playersMediocampistas .img14 {
-  grid-row: 1/4;
-  grid-column: 4/5;
-}
-.playersMediocampistas .img15 {
-  grid-row: 1/4;
-  grid-column: 2/4;
-}
-.playersMediocampistas .img18 {
-  grid-row: 2/5;
-  grid-column: 5/6;
-}
-
-.playersDelanteros {
-  margin-left: 2%;
-  margin-right: 2%;
-  display: grid;
-  justify-content: center;
-  grid-gap: 1rem;
-  grid-template-columns: 16% 15% 20% 19% 15% 12%;
-  grid-template-rows: 220px 200px 230px 230px 100px;
-}
-
-.playersDelanteros .img21 {
-  grid-row: 1/3;
-  grid-column: 1/3;
-}
-
-.playersDelanteros .img22 {
-  grid-row: 3/4;
-  grid-column: 5/7;
-}
-.playersDelanteros .img23 {
-  grid-row: 1/3;
-  grid-column: 5/7;
-}
-.playersDelanteros .img24 {
-  grid-row: 4/5;
-  grid-column: 5/7;
-}
-.playersDelanteros .img25 {
-  grid-row: 3/5;
-  grid-column: 1/3;
-}
-.playersDelanteros .img26 {
-  grid-row: 1/5;
-  grid-column: 3/5;
-}
-
-.players div a img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-  -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-  -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-}
-
-/* ---------------------------------historia--------------------------------------- */
-.historia {
+.tecnico {
   background-color: #e9e9e98a;
   align-items: center;
   font-family: "Saira", sans-serif;
-  text-align: center;
-}
+  text-align: center; }
+  .tecnico section h3 {
+    border-top: 1px solid rgba(139, 206, 233, 0.2);
+    color: #8bcee9;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.5em; }
+  .tecnico section .tecnicoFlex {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    .tecnico section .tecnicoFlex div {
+      width: 700px;
+      height: 450px; }
+      .tecnico section .tecnicoFlex div h4 {
+        font-style: normal;
+        font-size: 2em;
+        color: #424242; }
+      .tecnico section .tecnicoFlex div p {
+        font-style: normal;
+        font-size: 1em;
+        color: #424242;
+        padding: 1em; }
+    .tecnico section .tecnicoFlex img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+      -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+      -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
 
-.historia h3 {
-  border-top: 1px solid rgb(139, 206, 233, 0.2);
-  color: rgb(139, 206, 233);
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-  text-align: center;
-  font-size: 3em;
-  padding: 0.5em;
-}
-
-.historia .mundial {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.historia .mundial div {
-  width: 700px;
-  height: 450px;
-}
-
-.historia .mundial div img {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-  -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-  -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-}
-
-.historia div h4 {
-  font-style: normal;
-  font-size: 2em;
-  color: rgb(66, 66, 66);
-}
-
-.historia div p {
-  font-style: normal;
-  font-size: 1em;
-  color: rgb(66, 66, 66);
-  padding: 1em;
-}
-
-.historia iframe {
-  margin-bottom: 5%;
-}
-
-/* --------------------------//Footer//---------------------- */
 footer {
-  background-color: rgb(48, 155, 197);
-}
+  background-color: #309bc5; }
+  footer .footerContainer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px; }
+    footer .footerContainer a h2 {
+      color: #1045b8;
+      font-family: "Saira", sans-serif;
+      font-style: italic;
+      font-size: 30px;
+      margin-left: 20px; }
+      footer .footerContainer a h2:hover {
+        color: #424242;
+        transition: 1s; }
+    footer .footerContainer ul li a {
+      color: #424242;
+      margin: 25px 75px 0px 0px;
+      font-family: "Saira", sans-serif;
+      font-style: normal;
+      font-size: larger; }
+      footer .footerContainer ul li a:hover {
+        color: #1045b8;
+        transition: 1s; }
+    footer .footerContainer div p {
+      color: #424242;
+      font-family: "Saira", sans-serif;
+      font-style: normal;
+      font-size: larger; }
+  footer p {
+    text-align: center;
+    color: #424242;
+    margin: 0px;
+    padding: 0px; }
 
-footer p {
-  text-align: center;
-  color: rgb(66, 66, 66);
-  margin: 0px;
-  padding: 0px;
-}
-
-footer a h2 {
-  color: rgb(16, 69, 184);
-  font-family: "Saira", sans-serif;
-  font-style: italic;
-  font-size: 30px;
-  margin-left: 20px;
-}
-footer a h2:hover {
-  color: rgb(66, 66, 66);
-  transition: 1s;
-}
-
-.footerContainer {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.footerContainer ul li a {
-  color: rgb(66, 66, 66);
-  margin: 25px 75px 0px 0px;
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-size: larger;
-}
-.footerContainer ul li a:hover {
-  color: rgb(16, 69, 184);
-  transition: 1s;
-}
-
-.footerContainer div p {
-  color: rgb(66, 66, 66);
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-size: larger;
-}
-
-/*! ---------------------------------------Media query-------------------------- */
 @media screen and (max-width: 1350px) {
   .welcome {
-    flex-direction: column-reverse;
-  }
-}
+    flex-direction: column-reverse; } }
 
 @media screen and (max-width: 880px) {
-  .cards h3 {
-    font-size: 50px;
-  }
-  footer a h2 {
-    font-size: 20px;
-  }
-  .footerContainer ul li a {
-    font-size: 10px;
-  }
-  .footerContainer div p {
-    font-size: 10px;
-  }
+  main .cards h3 {
+    font-size: 50px; }
+  footer .footerContainer a h2 {
+    font-size: 20px; }
+  footer .footerContainer ul li a {
+    font-size: 10px; }
+  footer .footerContainer div p {
+    font-size: 10px; }
   .players p {
-    font-size: 50px;
-  }
-  .playersArqueros {
+    font-size: 50px; }
+  .players .playersArqueros {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 300px 300px;
-  }
-  .playersArqueros .gridItem {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .playersDefensores {
+    grid-template-rows: 300px 300px; }
+    .players .playersArqueros .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; }
+  .players .playersDefensores {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 300px 330px 330px 330px 330px;
-  }
-  .playersDefensores .gridItem {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  .playersMediocampistas {
+    grid-template-rows: 300px 330px 330px 330px 330px; }
+    .players .playersDefensores .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; }
+  .players .playersMediocampistas {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 300px 330px 330px 330px;
-  }
-  .playersMediocampistas .gridItem {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  .playersDelanteros {
+    grid-template-rows: 300px 330px 330px 330px; }
+    .players .playersMediocampistas .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; }
+  .players .playersDelanteros {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 300px 330px 330px;
-    padding: 5%;
-  }
-  .playersDelanteros .gridItem {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-}
+    padding: 5%; }
+    .players .playersDelanteros .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; } }
+
+@media screen and (max-width: 575px) {
+  section iframe {
+    display: none;
+    margin-bottom: none; } }
 
 @media screen and (max-width: 450px) {
-  .cards h3 {
-    font-size: 50px;
-  }
+  main .cards h3 {
+    font-size: 50px; }
   .players p {
-    font-size: 30px;
-  }
-  .playersArqueros {
+    font-size: 30px; }
+  .players .playersArqueros {
+    grid-template-columns: repeat(1, 1fr); }
+    .players .playersArqueros .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; }
+  .players .playersDefensores {
+    grid-template-columns: repeat(1, 1fr); }
+    .players .playersDefensores .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; }
+  .players .playersMediocampistas {
+    grid-template-columns: repeat(1, 1fr); }
+    .players .playersMediocampistas .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; }
+  .players .playersDelanteros {
     grid-template-columns: repeat(1, 1fr);
-  }
-  .playersArqueros .gridItem {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  .playersDefensores {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .playersDefensores .gridItem {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  .playersMediocampistas {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .playersMediocampistas .gridItem {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-  .playersDelanteros {
-    grid-template-columns: repeat(1, 1fr);
-    padding: 5%;
-  }
-  .playersDelanteros .gridItem {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-}
+    padding: 5%; }
+    .players .playersDelanteros .gridItem {
+      grid-column: span 1;
+      grid-row: span 1; } }
 
 @media screen and (max-width: 375px) {
   header a h1 {
-    font-size: 20px;
-  }
-  .principalImg .argChamp {
-    font-size: 25px;
-  }
-  .cards h3 {
-    font-size: 25px;
-  }
-  .cards div div {
-    width: 200px;
-    height: 130px;
-  }
+    font-size: 20px; }
+  main .principalImg .argChamp {
+    font-size: 25px; }
+  main .cards h3 {
+    font-size: 25px; }
+  main .cards .cardsFlex div {
+    width: 250px;
+    height: 200px; }
+    main .cards .cardsFlex div h4 {
+      font-size: 15px;
+      margin: 0; }
+    main .cards .cardsFlex div a {
+      font-size: 15px; }
   .footerContainer ul li a {
-    margin: 15px 25px 0px 0px;
-  }
-}
+    margin: 15px 25px 0px 0px; } }

@@ -1,0 +1,193 @@
+@media screen and (max-width: 1350px) {
+    .welcome {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    main .cards h3 {
+        font-size: 50px;
+    }
+
+    footer {
+        .footerContainer {
+            a {
+                h2 {
+                    font-size: 20px;
+                }
+            }
+
+            ul {
+                li {
+                    a {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            div {
+                p {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .players {
+        p {
+            font-size: 50px;
+        }
+
+        .playersArqueros {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 300px 300px;
+
+            .gridItem {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+
+        .playersDefensores {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 300px 330px 330px 330px 330px;
+
+            .gridItem {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+
+        .playersMediocampistas {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 300px 330px 330px 330px;
+
+            .gridItem {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+
+
+        .playersDelanteros {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 300px 330px 330px;
+            padding: 5%;
+
+            .gridItem {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    section {
+        iframe {
+            display: none;
+            margin-bottom: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    main .cards h3 {
+        font-size: 50px;
+    }
+
+    .players {
+        p {
+            font-size: 30px;
+        }
+
+        .playersArqueros {
+            grid-template-columns: repeat(1, 1fr);
+
+            .gridItem {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+
+        .playersDefensores {
+            grid-template-columns: repeat(1, 1fr);
+
+            .gridItem {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+
+        .playersMediocampistas {
+            grid-template-columns: repeat(1, 1fr);
+
+            .gridItem {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+
+        .playersDelanteros {
+            grid-template-columns: repeat(1, 1fr);
+            padding: 5%;
+
+            .gridItem {
+                grid-column: span 1;
+                grid-row: span 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    header a h1 {
+        font-size: 20px;
+    }
+
+    main {
+
+        .principalImg {
+
+            .argChamp {
+                font-size: 25px;
+            }
+        }
+
+        .cards {
+            h3 {
+                font-size: 25px;
+            }
+
+            .cardsFlex {
+                div {
+                    width: 250px;
+                    height: 200px;
+
+                    h4 {
+                        font-size: 15px;
+                        margin: 0;
+                    }
+
+                    a {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+
+    }
+
+
+    .footerContainer {
+        ul {
+            li {
+                a {
+                    margin: 15px 25px 0px 0px;
+                }
+            }
+        }
+    }
+}

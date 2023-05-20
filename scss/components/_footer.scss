@@ -1,0 +1,58 @@
+footer {
+    background-color: rgb(48, 155, 197);
+
+    .footerContainer {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+
+        a {
+            h2 {
+                color: rgb(16, 69, 184);
+                font-family: "Saira", sans-serif;
+                font-style: italic;
+                font-size: 30px;
+                margin-left: 20px;
+
+                &:hover {
+                    color: rgb(66, 66, 66);
+                    transition: 1s;
+                }
+            }
+        }
+
+        ul {
+            li {
+                a {
+                    color: rgb(66, 66, 66);
+                    margin: 25px 75px 0px 0px;
+                    font-family: "Saira", sans-serif;
+                    font-style: normal;
+                    font-size: larger;
+
+                    &:hover {
+                        color: rgb(16, 69, 184);
+                        transition: 1s;
+                    }
+                }
+            }
+        }
+
+        div {
+            p {
+                color: rgb(66, 66, 66);
+                font-family: "Saira", sans-serif;
+                font-style: normal;
+                font-size: larger;
+            }
+        }
+    }
+
+
+    p {
+        text-align: center;
+        color: rgb(66, 66, 66);
+        margin: 0px;
+        padding: 0px;
+    }
+}
