@@ -3,59 +3,56 @@
     align-items: center;
     font-family: "Saira", sans-serif;
     text-align: center;
-}
-
-section {
-    h3 {
-        border-top: 1px solid rgba(139, 206, 233, 0.2);
-        color: rgb(139, 206, 233);
-        text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-        text-align: center;
-        font-size: 3em;
-        padding: 0.5em;
-
-    }
-
-    .mundial {
-
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-
-        div {
-            width: 700px;
-            height: 450px;
-
-            img {
-                width: 100%;
-                object-fit: cover;
-                border-radius: 10px;
-                box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-                -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-                -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-            }
-
-            h4 {
-                font-style: normal;
-                font-size: 2em;
-                color: rgb(66, 66, 66);
-
-            }
-
-            p {
-                font-style: normal;
-                font-size: 1em;
-                color: rgb(66, 66, 66);
-                padding: 1em;
-
-            }
-
+    section {
+        h3 {
+            border-top: 1px solid rgba(139, 206, 233, 0.2);
+            color: rgb(139, 206, 233);
+            text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+            text-align: center;
+            font-size: 3em;
+            padding: 0.5em;
+    
         }
+    
+        .mundial {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+    
+            div {
+                width: 700px;
+                height: 450px;
+                padding-bottom: 2%;
+    
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+                    -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+                    -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+                }
+    
+                h4 {
+                    font-style: normal;
+                    font-size: 2em;
+                    color: rgb(66, 66, 66);
+    
+                }
+    
+                p {
+                    font-style: normal;
+                    font-size: 1em;
+                    color: rgb(66, 66, 66);
+                    padding: 1em;
+    
+                }
+    
+            }
+            iframe {
+                margin-bottom: 1%;
+            }
+        }
+    
     }
-
-}
-
-
-iframe {
-    margin-bottom: 5%;
 }

@@ -2,6 +2,20 @@
     .welcome {
         flex-direction: column-reverse;
     }
+
+    .tecnico {
+        .tecnicoFlex {
+            flex-direction: column;
+        }
+    }
+
+    .historia {
+        section {
+            .mundial {
+                flex-direction: column;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 880px) {
@@ -83,8 +97,46 @@
 }
 
 
+@media screen and (max-width: 775px) {
+    .tecnico {
+        .tecnicoFlex {
+            div {
+                width: 550px;
+                height: 350px;
+
+                p {
+                    font-size: 0.8rem;
+                }
+            }
+
+        }
+    }
+
+    .historia {
+        section {
+            div {
+                .textQuery {
+                    display: none;
+                    margin-bottom: none;
+                }
+            }
+
+            .mundial {
+                div {
+                    width: 550px;
+                    height: 350px;
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 575px) {
-    section {
+    .historia {
         iframe {
             display: none;
             margin-bottom: none;
@@ -93,7 +145,46 @@
 }
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 560px) {
+    .tecnico {
+        .tecnicoFlex {
+            div {
+                width: 450px;
+                height: 280px;
+
+                p {
+                    font-size: 0.6rem;
+                }
+
+                h4 {
+                    font-size: 0.7rem;
+                }
+            }
+
+        }
+    }
+
+    .historia {
+        section {
+            .mundial {
+                div {
+                    width: 450px;
+                    height: 280px;
+
+                    p {
+                        font-size: 0.7rem;
+                    }
+
+                    h4 {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
     main .cards h3 {
         font-size: 50px;
     }
@@ -140,7 +231,50 @@
             }
         }
     }
+    .tecnico {
+        h3{
+            font-size: 1.5em;
+        }
+        .tecnicoFlex {
+            div {
+                width: 375px;
+                height: 250px;;
+
+                p {
+                    font-size: 0.5rem;
+                }
+
+                h4 {
+                    font-size: 0.8rem;
+                }
+            }
+
+        }
+    }
+
+    .historia {
+        section {
+            h3{
+                font-size: 1.5em;
+            }
+            .mundial {
+                div {
+                    width: 375px;
+                    height: 250px;;
+                    
+                    h4 {
+                        font-size: 0.7rem;
+                    }
+                    p {
+                        font-size: 0.6rem;
+                    }
+
+                }
+            }
+        }
+    }
 }
+
 
 @media screen and (max-width: 375px) {
     header a h1 {

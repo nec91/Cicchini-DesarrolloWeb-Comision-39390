@@ -100,6 +100,9 @@ main .cards {
       -webkit-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
       -moz-box-shadow: 8px 8px 14px 0px rgba(72, 69, 102, 0.73);
       margin: 2%; }
+      main .cards .cardsFlex div:hover {
+        transform: scale(1.01);
+        transition: transform 0.5s; }
       main .cards .cardsFlex div img {
         width: 100%;
         height: 80%;
@@ -210,41 +213,39 @@ main .cards {
   align-items: center;
   font-family: "Saira", sans-serif;
   text-align: center; }
-
-section h3 {
-  border-top: 1px solid rgba(139, 206, 233, 0.2);
-  color: #8bcee9;
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-  text-align: center;
-  font-size: 3em;
-  padding: 0.5em; }
-
-section .mundial {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap; }
-  section .mundial div {
-    width: 700px;
-    height: 450px; }
-    section .mundial div img {
-      width: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-      -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-      -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
-    section .mundial div h4 {
-      font-style: normal;
-      font-size: 2em;
-      color: #424242; }
-    section .mundial div p {
-      font-style: normal;
-      font-size: 1em;
-      color: #424242;
-      padding: 1em; }
-
-iframe {
-  margin-bottom: 5%; }
+  .historia section h3 {
+    border-top: 1px solid rgba(139, 206, 233, 0.2);
+    color: #8bcee9;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    text-align: center;
+    font-size: 3em;
+    padding: 0.5em; }
+  .historia section .mundial {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .historia section .mundial div {
+      width: 700px;
+      height: 450px;
+      padding-bottom: 2%; }
+      .historia section .mundial div img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+        -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+        -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
+      .historia section .mundial div h4 {
+        font-style: normal;
+        font-size: 2em;
+        color: #424242; }
+      .historia section .mundial div p {
+        font-style: normal;
+        font-size: 1em;
+        color: #424242;
+        padding: 1em; }
+    .historia section .mundial iframe {
+      margin-bottom: 1%; }
 
 .players {
   background-color: #e9e9e98a;
@@ -264,6 +265,9 @@ iframe {
     box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
     -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
     -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
+    .players div a img:hover {
+      transform: scale(1.01);
+      transition: transform 0.5s; }
   .players .playersArqueros {
     margin-left: 2%;
     margin-right: 2%;
@@ -356,36 +360,40 @@ iframe {
   align-items: center;
   font-family: "Saira", sans-serif;
   text-align: center; }
-  .tecnico section h3 {
+  .tecnico section {
+    padding-bottom: 2%; }
+  .tecnico h3 {
     border-top: 1px solid rgba(139, 206, 233, 0.2);
     color: #8bcee9;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     text-align: center;
     font-size: 3em;
     padding: 0.5em; }
-  .tecnico section .tecnicoFlex {
+  .tecnico .tecnicoFlex {
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap; }
-    .tecnico section .tecnicoFlex div {
+    align-items: center; }
+    .tecnico .tecnicoFlex div {
       width: 700px;
-      height: 450px; }
-      .tecnico section .tecnicoFlex div h4 {
+      height: 450px;
+      padding-bottom: 2%; }
+      .tecnico .tecnicoFlex div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+        -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+        -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
+      .tecnico .tecnicoFlex div h4 {
         font-style: normal;
         font-size: 2em;
         color: #424242; }
-      .tecnico section .tecnicoFlex div p {
+      .tecnico .tecnicoFlex div p {
         font-style: normal;
         font-size: 1em;
         color: #424242;
         padding: 1em; }
-    .tecnico section .tecnicoFlex img {
-      width: 100%;
-      object-fit: cover;
-      border-radius: 10px;
-      box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-      -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-      -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
 
 footer {
   background-color: #309bc5; }
@@ -424,7 +432,11 @@ footer {
 
 @media screen and (max-width: 1350px) {
   .welcome {
-    flex-direction: column-reverse; } }
+    flex-direction: column-reverse; }
+  .tecnico .tecnicoFlex {
+    flex-direction: column; }
+  .historia section .mundial {
+    flex-direction: column; } }
 
 @media screen and (max-width: 880px) {
   main .cards h3 {
@@ -463,12 +475,43 @@ footer {
       grid-column: span 1;
       grid-row: span 1; } }
 
+@media screen and (max-width: 775px) {
+  .tecnico .tecnicoFlex div {
+    width: 550px;
+    height: 350px; }
+    .tecnico .tecnicoFlex div p {
+      font-size: 0.8rem; }
+  .historia section div .textQuery {
+    display: none;
+    margin-bottom: none; }
+  .historia section .mundial div {
+    width: 550px;
+    height: 350px; }
+    .historia section .mundial div p {
+      font-size: 0.9rem; } }
+
 @media screen and (max-width: 575px) {
-  section iframe {
+  .historia iframe {
     display: none;
     margin-bottom: none; } }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 560px) {
+  .tecnico .tecnicoFlex div {
+    width: 450px;
+    height: 280px; }
+    .tecnico .tecnicoFlex div p {
+      font-size: 0.6rem; }
+    .tecnico .tecnicoFlex div h4 {
+      font-size: 0.7rem; }
+  .historia section .mundial div {
+    width: 450px;
+    height: 280px; }
+    .historia section .mundial div p {
+      font-size: 0.7rem; }
+    .historia section .mundial div h4 {
+      font-size: 0.9rem; } }
+
+@media screen and (max-width: 460px) {
   main .cards h3 {
     font-size: 50px; }
   .players p {
@@ -493,7 +536,25 @@ footer {
     padding: 5%; }
     .players .playersDelanteros .gridItem {
       grid-column: span 1;
-      grid-row: span 1; } }
+      grid-row: span 1; }
+  .tecnico h3 {
+    font-size: 1.5em; }
+  .tecnico .tecnicoFlex div {
+    width: 375px;
+    height: 250px; }
+    .tecnico .tecnicoFlex div p {
+      font-size: 0.5rem; }
+    .tecnico .tecnicoFlex div h4 {
+      font-size: 0.8rem; }
+  .historia section h3 {
+    font-size: 1.5em; }
+  .historia section .mundial div {
+    width: 375px;
+    height: 250px; }
+    .historia section .mundial div h4 {
+      font-size: 0.7rem; }
+    .historia section .mundial div p {
+      font-size: 0.6rem; } }
 
 @media screen and (max-width: 375px) {
   header a h1 {
