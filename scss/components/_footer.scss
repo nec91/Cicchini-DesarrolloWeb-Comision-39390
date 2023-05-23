@@ -1,5 +1,5 @@
 footer {
-    background-color: rgb(48, 155, 197);
+    background-color: nth($color, 8);
 
     .footerContainer {
         display: flex;
@@ -8,14 +8,14 @@ footer {
 
         a {
             h2 {
-                color: rgb(16, 69, 184);
+                color: nth($color, 9);
                 font-family: "Saira", sans-serif;
                 font-style: italic;
                 font-size: 30px;
                 margin-left: 20px;
 
                 &:hover {
-                    color: rgb(66, 66, 66);
+                    color: nth($color, 3);
                     transition: 1s;
                 }
             }
@@ -24,14 +24,14 @@ footer {
         ul {
             li {
                 a {
-                    color: rgb(66, 66, 66);
+                    color: nth($color, 3);
                     margin: 25px 75px 0px 0px;
                     font-family: "Saira", sans-serif;
                     font-style: normal;
                     font-size: larger;
 
                     &:hover {
-                        color: rgb(16, 69, 184);
+                        color: nth($color, 9);
                         transition: 1s;
                     }
                 }
@@ -40,7 +40,7 @@ footer {
 
         div {
             p {
-                color: rgb(66, 66, 66);
+                color: nth($color, 3);
                 font-family: "Saira", sans-serif;
                 font-style: normal;
                 font-size: larger;
@@ -51,7 +51,7 @@ footer {
 
     p {
         text-align: center;
-        color: rgb(66, 66, 66);
+        color: nth($color, 3);
         margin: 0px;
         padding: 0px;
     }

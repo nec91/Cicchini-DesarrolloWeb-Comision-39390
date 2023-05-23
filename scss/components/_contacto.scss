@@ -1,13 +1,13 @@
 .contact {
     font-family: "Saira", sans-serif;
-    background-color: #e9e9e98a;
+    background-color: nth($color, 1);
 
     .contactForm {
         display: flex;
         min-height: 100vh;
 
         .form {
-            background-color: white;
+            background-color: nth($color, 2);
             margin: auto;
             width: 90%;
             max-width: 400px;
@@ -20,7 +20,7 @@
                 text-align: center;
                 font-style: italic;
                 font-size: 2rem;
-                color: rgb(139, 206, 233);
+                color: nth($color, 7);
                 text-shadow: 0 0 3px #000000, 0 0 5px #000000;
             }
 
@@ -28,7 +28,7 @@
                 text-align: center;
                 font-style: normal;
                 font-size: 1rem;
-                color: rgb(66, 66, 66);
+                color: nth($color, 3);
                 margin-bottom: 0.5em;
             }
 
@@ -39,28 +39,27 @@
 
                 .formGroup {
                     position: relative;
-                    --color: #5757577e;
 
                     .formInput {
                         width: 100%;
                         background: none;
-                        color: #706c6c;
+                        color: nth($color, 5);
                         font-size: 1rem;
                         padding: 0.6em 0.3em;
                         border: none;
                         outline: none;
-                        border-bottom: 1px solid var(--color);
+                        border-bottom: 1px solid nth($color, 4);
                         font-family: "Saira", sans-serif;
 
                         &:not(:placeholder-shown) {
-                            color: #4d4646;
+                            color: nth($color, 6);
                         }
 
                         &:focus+.formLabel,
                         &:not(:placeholder-shown)+.formLabel {
                             transform: translateY(-12px) scale(0.7);
                             transform-origin: left top;
-                            color: rgb(139, 206, 233);
+                            color: nth($color, 7);
                         }
 
                         &:focus~.formLine,
@@ -70,7 +69,7 @@
                     }
 
                     .formLabel {
-                        color: var(--color);
+                        color: nth($color, 4);
                         cursor: pointer;
                         position: absolute;
                         top: 0;
@@ -85,7 +84,7 @@
                         left: 0;
                         width: 100%;
                         height: 1px;
-                        background-color: rgb(48, 155, 197);
+                        background-color: nth($color, 8);
                         transform: scale(0);
                         transform: left bottom;
                         transition: transform 0.4s;
@@ -96,8 +95,8 @@
             }
 
             .formSubmit {
-                background-color: rgb(48, 155, 197);
-                color: #fff;
+                background-color: nth($color, 8);
+                color: nth($color, 2);
                 font-family: "Saira", sans-serif;
                 font-weight: 300;
                 font-size: 1rem;

@@ -10,7 +10,7 @@ main {
             font-family: "Saira", sans-serif;
             font-style: oblique;
             font-size: 50px;
-            color: rgb(245, 223, 183);
+            color: nth($color, 11);
             text-shadow: 0 0 3px #000000, 0 0 5px #000000;
             text-align: center;
             padding: 2%;
@@ -19,7 +19,7 @@ main {
 
     .welcome {
         height: 25%;
-        background-color: #e9e9e98a;
+        background-color: nth($color, 1);
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -38,7 +38,7 @@ main {
                 font-family: "Saira", sans-serif;
                 font-style: normal;
                 font-size: xx-large;
-                color: rgb(66, 66, 66);
+                color: nth($color, 3);
                 margin-right: 5%;
                 text-align: center;
 
@@ -48,7 +48,7 @@ main {
                 font-family: "Saira", sans-serif;
                 font-style: italic;
                 font-size: x-large;
-                color: rgb(139, 206, 233);
+                color: nth($color, 7);
                 margin-right: 5%;
                 margin-top: 5%;
                 text-align: center;
@@ -58,13 +58,13 @@ main {
     }
 
     .cards {
-        background-color: #e9e9e98a;
+        background-color: nth($color, 1);
 
         h3 {
             font-family: "Saira", sans-serif;
             font-style: italic;
             font-size: 100px;
-            color: rgb(139, 206, 233);
+            color: nth($color, 7);
             text-shadow: 0 0 3px #000000, 0 0 5px #000000;
             text-align: center;
             padding: 5%;
@@ -103,21 +103,21 @@ main {
                     font-family: "Saira", sans-serif;
                     font-style: italic;
                     font-size: large;
-                    color: rgb(139, 206, 233);
+                    color: nth($color, 7);
                     padding-right: 5%;
-                    background-color: rgb(16, 69, 184);
+                    background-color: nth($color, 9);
                 }
 
                 a {
                     font-family: "Saira", sans-serif;
                     font-style: normal;
                     font-size: medium;
-                    color: rgb(66, 66, 66);
+                    color: nth($color, 3);
                     margin-right: 5%;
                 }
 
                 &:hover {
-                    background-color: rgb(139, 206, 233);
+                    background-color: nth($color, 7);
                     transition: 0.5s;
 
                 }

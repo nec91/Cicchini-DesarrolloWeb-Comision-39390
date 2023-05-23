@@ -1,32 +1,32 @@
 header {
-    background-color: rgb(48, 155, 197);
+    background-color: nth($color, 8);
     position: sticky;
     top: 0;
     z-index: 10;
 
     h1 {
-        color: rgb(16, 69, 184);
+        color: nth($color, 9);
         font-family: "Saira", sans-serif;
         font-style: italic;
         font-size: 30px;
         margin-left: 20px;
 
         &:hover {
-            color: rgb(66, 66, 66);
+            color: nth($color, 3);
             transition: 1s;
         }
     }
 }
 
 .nav-link {
-    color: rgb(66, 66, 66);
+    color: nth($color, 3);
     font-family: "Saira", sans-serif;
     font-style: normal;
     font-size: larger;
     text-decoration: none;
 
     &:hover {
-        color: rgb(16, 69, 184);
+        color: nth($color, 9);
         transition: 1s;
     }
 }
