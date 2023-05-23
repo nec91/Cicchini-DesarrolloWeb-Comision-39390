@@ -3,8 +3,9 @@
 Alumno: Nicolas Cicchini
 CoderHouse, Desarrollo web.
 
-2da Pre entrega, consignas:
+3era Pre entrega, consignas:
 
+2da pre entrega:
 Hacer entrega de todo el proyecto.  Entregar index + otro HTML totalmente RESPONSIVE. Para generar un diseño responsive utilizar el Grid + Flexbox + Boxmodel + Media query
 La entrega se deberá cargar a un repositorio de GitHub público.
 Objetivos
@@ -27,6 +28,23 @@ Utilizar Git de forma correcta para versionar el proyecto. Hacer uso de GitHub p
 Se debe entregar
 Todos los archivos necesarios para visualizar correctamente la web.
 
+3era pre entrega
+El proyecto completo deberá ser totalmente RESPONSIVE. El mismo deberá estar configurado y con código SASS aplicado. Además, deberán mostrar uso de la correcta aplicación del SEO. 
+Realizar la estructura final de la web.
+Efectuar el estilo final de la web.
+Realizar una correcta implementación de Node modules (ignorandola para que no se suba al repo de GitHub).
+Generar la carga en un repositorio en GitHub.
+
+Trasladar los estilos creados en CSS a SCSS, haciendo uso correcto del nesting, partials, mixins, extends, variables y listas del lenguaje SASS.
+Formar un archivo de SCSS con una sintaxis correcta, dónde el código no tenga errores y se compile correctamente a CSS.
+Estilo avanzado: Transforma lo que originalmente eran estilos de CSS en SCSS. Utilizar las características de SCSS para armar estilos de CSS de forma dinámica, además del uso de nesting para estructurarlo de forma legible y evitando repetir código.
+Estructura de la web: Usa etiquetas no solo para armar contenido, sino para armar los elementos que van a conformar el layout de la web, los contenedores, etc.
+
+Implementar técnicas de SEO como meta tags description, keywords, favicon, completar los alts de las imágenes y utilización de las etiquetas semánticas.
+Utilizar Git de forma correcta para versionar el proyecto. Hacer uso de GitHub para brindar acceso al proyecto versionado.
+Enviar al repositorio todos los archivos necesarios para visualizar correctamente la web.
+Utilizar .gitignore para evitar enviar archivos irrelevantes para la presentación como node_modules.
+En el repositorio se muestran los commit realizados para actualizar/versionar el código.
 
 
 Tecnologias utilizadas:
@@ -35,3 +53,7 @@ CSS
 BOOSTRAP
 GIT
 GITHUB
+SASS
+SEO
+
+
