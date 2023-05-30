@@ -363,7 +363,7 @@ main .cards {
   .tecnico section {
     padding-bottom: 2%; }
   .tecnico h3 {
-    border-top: 1px solid #1045b8;
+    border-top: 1px solid rgba(139, 206, 233, 0.2);
     color: #8bcee9;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     text-align: center;
