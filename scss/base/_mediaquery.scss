@@ -1,4 +1,4 @@
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
     .welcome {
         flex-direction: column-reverse;
     }
@@ -6,6 +6,17 @@
     .tecnico {
         .tecnicoFlex {
             flex-direction: column;
+
+            div {
+                justify-content: center;
+                max-width: 1200px;
+                width: fit-content;
+                padding: 1em;
+            }
+        }
+
+        .pabloAimar {
+            flex-direction: column-reverse;
         }
     }
 
@@ -13,6 +24,15 @@
         section {
             .mundial {
                 flex-direction: column;
+
+                div {
+                    width: fit-content;
+                    padding: 1em;
+                }
+            }
+
+            .mundial78 {
+                flex-direction: column-reverse;
             }
         }
     }
@@ -98,91 +118,33 @@
 
 
 @media screen and (max-width: 775px) {
-    .tecnico {
-        .tecnicoFlex {
-            div {
-                width: 550px;
-                height: 350px;
-
-                p {
-                    font-size: 0.8rem;
-                }
-            }
-
-        }
-    }
-
     .historia {
-        section {
-            div {
-                .textQuery {
-                    display: none;
-                    margin-bottom: none;
-                }
-            }
 
-            .mundial {
-                div {
-                    width: 550px;
-                    height: 350px;
-
-                    p {
-                        font-size: 0.9rem;
-                    }
-                }
+        div {
+            .textQuery {
+                display: none;
+                margin-bottom: none;
             }
         }
+
     }
 }
+
 
 @media screen and (max-width: 575px) {
     .historia {
         iframe {
-            display: none;
-            margin-bottom: none;
+            width: 100%;
+            height: auto;
+            padding: 5%;
         }
     }
 }
 
 
-@media screen and (max-width: 560px) {
-    .tecnico {
-        .tecnicoFlex {
-            div {
-                width: 450px;
-                height: 280px;
 
-                p {
-                    font-size: 0.6rem;
-                }
 
-                h4 {
-                    font-size: 0.7rem;
-                }
-            }
 
-        }
-    }
-
-    .historia {
-        section {
-            .mundial {
-                div {
-                    width: 450px;
-                    height: 280px;
-
-                    p {
-                        font-size: 0.7rem;
-                    }
-
-                    h4 {
-                        font-size: 0.9rem;
-                    }
-                }
-            }
-        }
-    }
-}
 
 @media screen and (max-width: 460px) {
     main .cards h3 {
@@ -228,48 +190,6 @@
             .gridItem {
                 grid-column: span 1;
                 grid-row: span 1;
-            }
-        }
-    }
-    .tecnico {
-        h3{
-            font-size: 1.5em;
-        }
-        .tecnicoFlex {
-            div {
-                width: 375px;
-                height: 250px;;
-
-                p {
-                    font-size: 0.5rem;
-                }
-
-                h4 {
-                    font-size: 0.8rem;
-                }
-            }
-
-        }
-    }
-
-    .historia {
-        section {
-            h3{
-                font-size: 1.5em;
-            }
-            .mundial {
-                div {
-                    width: 375px;
-                    height: 250px;;
-                    
-                    h4 {
-                        font-size: 0.7rem;
-                    }
-                    p {
-                        font-size: 0.6rem;
-                    }
-
-                }
             }
         }
     }
@@ -320,48 +240,6 @@
             li {
                 a {
                     margin: 15px 25px 0px 0px;
-                }
-            }
-        }
-    }
-    .tecnico {
-        h3{
-            font-size: 1.5em;
-        }
-        .tecnicoFlex {
-            div {
-                width: 340px;
-                height: 220px;;
-
-                p {
-                    font-size: 0.5rem;
-                }
-
-                h4 {
-                    font-size: 0.8rem;
-                }
-            }
-
-        }
-    }
-
-    .historia {
-        section {
-            h3{
-                font-size: 1.5em;
-            }
-            .mundial {
-                div {
-                    width: 340px;
-                    height: 220px;;
-                    
-                    h4 {
-                        font-size: 0.7rem;
-                    }
-                    p {
-                        font-size: 0.5rem;
-                    }
-
                 }
             }
         }

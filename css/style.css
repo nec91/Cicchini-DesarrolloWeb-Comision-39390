@@ -213,39 +213,43 @@ main .cards {
   align-items: center;
   font-family: "Saira", sans-serif;
   text-align: center; }
-  .historia section h3 {
+  .historia section {
+    padding-bottom: 2%; }
+  .historia h3 {
     border-top: 1px solid rgba(139, 206, 233, 0.2);
     color: #8bcee9;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     text-align: center;
     font-size: 3em;
     padding: 0.5em; }
-  .historia section .mundial {
+  .historia .mundial {
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center; }
-    .historia section .mundial div {
+    .historia .mundial div {
       width: 700px;
-      height: 450px;
+      height: auto;
       padding-bottom: 2%; }
-      .historia section .mundial div img {
+      .historia .mundial div img {
         width: 100%;
-        object-fit: cover;
+        height: auto;
         border-radius: 10px;
+        object-fit: cover;
         box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
         -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
         -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
-      .historia section .mundial div h4 {
+      .historia .mundial div h4 {
         font-style: normal;
         font-size: 2em;
         color: #424242; }
-      .historia section .mundial div p {
+      .historia .mundial div p {
         font-style: normal;
         font-size: 1em;
         color: #424242;
         padding: 1em; }
-    .historia section .mundial iframe {
-      margin-bottom: 1%; }
+  .historia iframe {
+    margin-bottom: 1%; }
 
 .players {
   background-color: #e9e9e98a;
@@ -371,17 +375,18 @@ main .cards {
     padding: 0.5em; }
   .tecnico .tecnicoFlex {
     display: flex;
+    flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center; }
     .tecnico .tecnicoFlex div {
       width: 700px;
-      height: 450px;
+      height: auto;
       padding-bottom: 2%; }
       .tecnico .tecnicoFlex div img {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;
         border-radius: 10px;
+        object-fit: cover;
         box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
         -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
         -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
@@ -430,13 +435,25 @@ footer {
     margin: 0px;
     padding: 0px; }
 
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1400px) {
   .welcome {
     flex-direction: column-reverse; }
   .tecnico .tecnicoFlex {
     flex-direction: column; }
+    .tecnico .tecnicoFlex div {
+      justify-content: center;
+      max-width: 1200px;
+      width: fit-content;
+      padding: 1em; }
+  .tecnico .pabloAimar {
+    flex-direction: column-reverse; }
   .historia section .mundial {
-    flex-direction: column; } }
+    flex-direction: column; }
+    .historia section .mundial div {
+      width: fit-content;
+      padding: 1em; }
+  .historia section .mundial78 {
+    flex-direction: column-reverse; } }
 
 @media screen and (max-width: 880px) {
   main .cards h3 {
@@ -476,40 +493,15 @@ footer {
       grid-row: span 1; } }
 
 @media screen and (max-width: 775px) {
-  .tecnico .tecnicoFlex div {
-    width: 550px;
-    height: 350px; }
-    .tecnico .tecnicoFlex div p {
-      font-size: 0.8rem; }
-  .historia section div .textQuery {
-    display: none;
-    margin-bottom: none; }
-  .historia section .mundial div {
-    width: 550px;
-    height: 350px; }
-    .historia section .mundial div p {
-      font-size: 0.9rem; } }
-
-@media screen and (max-width: 575px) {
-  .historia iframe {
+  .historia div .textQuery {
     display: none;
     margin-bottom: none; } }
 
-@media screen and (max-width: 560px) {
-  .tecnico .tecnicoFlex div {
-    width: 450px;
-    height: 280px; }
-    .tecnico .tecnicoFlex div p {
-      font-size: 0.6rem; }
-    .tecnico .tecnicoFlex div h4 {
-      font-size: 0.7rem; }
-  .historia section .mundial div {
-    width: 450px;
-    height: 280px; }
-    .historia section .mundial div p {
-      font-size: 0.7rem; }
-    .historia section .mundial div h4 {
-      font-size: 0.9rem; } }
+@media screen and (max-width: 575px) {
+  .historia iframe {
+    width: 100%;
+    height: auto;
+    padding: 5%; } }
 
 @media screen and (max-width: 460px) {
   main .cards h3 {
@@ -536,25 +528,7 @@ footer {
     padding: 5%; }
     .players .playersDelanteros .gridItem {
       grid-column: span 1;
-      grid-row: span 1; }
-  .tecnico h3 {
-    font-size: 1.5em; }
-  .tecnico .tecnicoFlex div {
-    width: 375px;
-    height: 250px; }
-    .tecnico .tecnicoFlex div p {
-      font-size: 0.5rem; }
-    .tecnico .tecnicoFlex div h4 {
-      font-size: 0.8rem; }
-  .historia section h3 {
-    font-size: 1.5em; }
-  .historia section .mundial div {
-    width: 375px;
-    height: 250px; }
-    .historia section .mundial div h4 {
-      font-size: 0.7rem; }
-    .historia section .mundial div p {
-      font-size: 0.6rem; } }
+      grid-row: span 1; } }
 
 @media screen and (max-width: 375px) {
   header a h1 {
@@ -572,22 +546,4 @@ footer {
     main .cards .cardsFlex div a {
       font-size: 15px; }
   .footerContainer ul li a {
-    margin: 15px 25px 0px 0px; }
-  .tecnico h3 {
-    font-size: 1.5em; }
-  .tecnico .tecnicoFlex div {
-    width: 340px;
-    height: 220px; }
-    .tecnico .tecnicoFlex div p {
-      font-size: 0.5rem; }
-    .tecnico .tecnicoFlex div h4 {
-      font-size: 0.8rem; }
-  .historia section h3 {
-    font-size: 1.5em; }
-  .historia section .mundial div {
-    width: 340px;
-    height: 220px; }
-    .historia section .mundial div h4 {
-      font-size: 0.7rem; }
-    .historia section .mundial div p {
-      font-size: 0.5rem; } }
+    margin: 15px 25px 0px 0px; } }
