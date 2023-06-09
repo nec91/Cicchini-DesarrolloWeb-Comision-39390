@@ -19,17 +19,17 @@ header {
     color: #1045b8;
     font-family: "Saira", sans-serif;
     font-style: italic;
-    font-size: 30px;
+    font-size: 2rem;
     margin-left: 20px; }
     header h1:hover {
-      color: #424242;
+      color: #e9e9e9eb;
       transition: 1s; }
 
 .nav-link {
-  color: #424242;
+  color: #e9e9e9eb;
   font-family: "Saira", sans-serif;
   font-style: normal;
-  font-size: larger;
+  font-size: 1.2rem;
   text-decoration: none; }
   .nav-link:hover {
     color: #1045b8;
@@ -44,7 +44,7 @@ main .principalImg {
   main .principalImg .argChamp {
     font-family: "Saira", sans-serif;
     font-style: oblique;
-    font-size: 50px;
+    font-size: 3rem;
     color: #f5dfb7;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     text-align: center;
@@ -52,37 +52,40 @@ main .principalImg {
 
 main .welcome {
   height: 25%;
-  background-color: #e9e9e98a;
+  background-color: #e9e9e9f1;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  main .welcome img {
-    width: 100%;
-    height: 100%;
-    margin: 2%;
-    object-fit: cover; }
-  main .welcome div .welcomeH4 {
-    font-family: "Saira", sans-serif;
-    font-style: normal;
-    font-size: xx-large;
-    color: #424242;
-    margin-right: 5%;
-    text-align: center; }
-  main .welcome div .welcomeP {
-    font-family: "Saira", sans-serif;
-    font-style: italic;
-    font-size: x-large;
-    color: #8bcee9;
-    margin-right: 5%;
-    margin-top: 5%;
-    text-align: center; }
+  main .welcome div {
+    max-width: 900px;
+    height: auto; }
+    main .welcome div img {
+      width: 100%;
+      height: 100%;
+      padding: 2%;
+      object-fit: cover; }
+    main .welcome div .welcomeH4 {
+      font-family: "Saira", sans-serif;
+      font-style: normal;
+      font-size: 2rem;
+      color: #424242;
+      margin-right: 5%;
+      text-align: center; }
+    main .welcome div .welcomeP {
+      font-family: "Saira", sans-serif;
+      font-style: italic;
+      font-size: 2rem;
+      color: #8bcee9;
+      margin-right: 5%;
+      margin-top: 5%;
+      text-align: center; }
 
 main .cards {
-  background-color: #e9e9e98a; }
+  background-color: #e9e9e9f1; }
   main .cards h3 {
     font-family: "Saira", sans-serif;
     font-style: italic;
-    font-size: 100px;
+    font-size: 6rem;
     color: #8bcee9;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     text-align: center;
@@ -113,14 +116,14 @@ main .cards {
       main .cards .cardsFlex div h4 {
         font-family: "Saira", sans-serif;
         font-style: italic;
-        font-size: large;
+        font-size: 1.2rem;
         color: #8bcee9;
         padding-right: 5%;
         background-color: #1045b8; }
       main .cards .cardsFlex div a {
         font-family: "Saira", sans-serif;
         font-style: normal;
-        font-size: medium;
+        font-size: 1rem;
         color: #424242;
         margin-right: 5%; }
       main .cards .cardsFlex div:hover {
@@ -128,8 +131,10 @@ main .cards {
         transition: 0.5s; }
 
 .contact {
+  background-color: #e9e9e9f1;
+  align-items: center;
   font-family: "Saira", sans-serif;
-  background-color: #e9e9e98a; }
+  text-align: center; }
   .contact .contactForm {
     display: flex;
     min-height: 100vh; }
@@ -208,54 +213,47 @@ main .cards {
         border: none;
         border-radius: 0.5em; }
 
-.historia {
-  background-color: #e9e9e98a;
-  align-items: center;
-  font-family: "Saira", sans-serif;
-  text-align: center; }
-  .historia section {
-    padding-bottom: 2%; }
-  .historia h3 {
-    border-top: 1px solid rgba(139, 206, 233, 0.2);
-    color: #8bcee9;
-    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
-    text-align: center;
-    font-size: 3em;
-    padding: 0.5em; }
-  .historia .mundial {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-around;
-    align-items: center; }
-    .historia .mundial div {
-      width: 700px;
-      height: auto;
-      padding-bottom: 2%; }
-      .historia .mundial div img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        object-fit: cover;
-        box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-        -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
-        -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
-      .historia .mundial div h4 {
-        font-style: normal;
-        font-size: 2em;
-        color: #424242; }
-      .historia .mundial div p {
-        font-style: normal;
-        font-size: 1em;
-        color: #424242;
-        padding: 1em; }
-  .historia iframe {
-    margin-bottom: 1%; }
+.historia section {
+  padding-bottom: 2%; }
+
+.historia h3 {
+  border-top: 1px solid rgba(139, 206, 233, 0.2);
+  color: #8bcee9;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  text-align: center;
+  font-size: 3rem;
+  padding: 0.5em; }
+
+.historia .mundial div {
+  width: 700px;
+  height: auto;
+  padding-bottom: 2%; }
+  .historia .mundial div img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+    -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
+    -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
+  .historia .mundial div h4 {
+    font-style: normal;
+    font-size: 2rem;
+    color: #424242; }
+  .historia .mundial div p {
+    font-style: normal;
+    font-size: 1rem;
+    color: #424242;
+    padding: 1em; }
+
+.historia iframe {
+  margin-bottom: 1%; }
 
 .players {
-  background-color: #e9e9e98a;
+  background-color: #e9e9e9f1;
   font-family: "Saira", sans-serif;
   font-style: italic;
-  font-size: 75px;
+  font-size: 5rem;
   color: #8bcee9;
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
   text-align: center; }
@@ -359,30 +357,30 @@ main .cards {
       grid-row: 1/5;
       grid-column: 3/5; }
 
-.tecnico {
-  background-color: #e9e9e98a;
+.tecnico, .historia {
+  background-color: #e9e9e9f1;
   align-items: center;
   font-family: "Saira", sans-serif;
   text-align: center; }
-  .tecnico section {
+  .tecnico section, .historia section {
     padding-bottom: 2%; }
-  .tecnico h3 {
+  .tecnico h3, .historia h3 {
     border-top: 1px solid rgba(139, 206, 233, 0.2);
     color: #8bcee9;
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
     padding: 0.5em; }
-  .tecnico .tecnicoFlex {
+  .tecnico .tecnicoFlex, .historia .tecnicoFlex, .historia .mundial {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-around;
     align-items: center; }
-    .tecnico .tecnicoFlex div {
+    .tecnico .tecnicoFlex div, .historia .tecnicoFlex div, .historia .mundial div {
       width: 700px;
       height: auto;
       padding-bottom: 2%; }
-      .tecnico .tecnicoFlex div img {
+      .tecnico .tecnicoFlex div img, .historia .tecnicoFlex div img, .historia .mundial div img {
         width: 100%;
         height: auto;
         border-radius: 10px;
@@ -390,62 +388,74 @@ main .cards {
         box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
         -webkit-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74);
         -moz-box-shadow: 5px 4px 5px -2px rgba(17, 0, 34, 0.74); }
-      .tecnico .tecnicoFlex div h4 {
+      .tecnico .tecnicoFlex div h4, .historia .tecnicoFlex div h4, .historia .mundial div h4 {
         font-style: normal;
-        font-size: 2em;
+        font-size: 2rem;
         color: #424242; }
-      .tecnico .tecnicoFlex div p {
+      .tecnico .tecnicoFlex div p, .historia .tecnicoFlex div p, .historia .mundial div p {
         font-style: normal;
-        font-size: 1em;
+        font-size: 1rem;
         color: #424242;
-        padding: 1em; }
+        padding: 1rem; }
 
 footer {
   background-color: #309bc5; }
   footer .footerContainer {
     display: flex;
     justify-content: space-around;
-    padding: 20px; }
+    padding-top: 2rem; }
     footer .footerContainer a h2 {
       color: #1045b8;
       font-family: "Saira", sans-serif;
       font-style: italic;
-      font-size: 30px;
-      margin-left: 20px; }
+      font-size: 2rem; }
       footer .footerContainer a h2:hover {
-        color: #424242;
+        color: #e9e9e9eb;
         transition: 1s; }
-    footer .footerContainer ul li a {
-      color: #424242;
-      margin: 25px 75px 0px 0px;
-      font-family: "Saira", sans-serif;
-      font-style: normal;
-      font-size: larger; }
-      footer .footerContainer ul li a:hover {
-        color: #1045b8;
-        transition: 1s; }
-    footer .footerContainer div p {
-      color: #424242;
-      font-family: "Saira", sans-serif;
-      font-style: normal;
-      font-size: larger; }
+    footer .footerContainer ul li {
+      margin-bottom: 1rem; }
+      footer .footerContainer ul li a {
+        color: #e9e9e9eb;
+        font-family: "Saira", sans-serif;
+        font-style: normal;
+        font-size: 1.2rem; }
+        footer .footerContainer ul li a:hover {
+          color: #1045b8;
+          transition: 1s; }
+    footer .footerContainer div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      footer .footerContainer div p {
+        color: #e9e9e9eb;
+        font-family: "Saira", sans-serif;
+        font-style: 1rem;
+        font-size: larger; }
+      footer .footerContainer div i {
+        color: #e9e9e9eb;
+        font-size: 2rem; }
+        footer .footerContainer div i:hover {
+          color: #1045b8;
+          transition: 1s; }
   footer p {
     text-align: center;
-    color: #424242;
+    color: #e9e9e9f1;
     margin: 0px;
     padding: 0px; }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1520px) {
   .welcome {
-    flex-direction: column-reverse; }
-  .tecnico .tecnicoFlex {
+    flex-direction: column-reverse; } }
+
+@media screen and (max-width: 1400px) {
+  .tecnico .tecnicoFlex, .historia .tecnicoFlex, .historia .mundial {
     flex-direction: column; }
-    .tecnico .tecnicoFlex div {
+    .tecnico .tecnicoFlex div, .historia .tecnicoFlex div, .historia .mundial div {
       justify-content: center;
       max-width: 1200px;
       width: fit-content;
       padding: 1em; }
-  .tecnico .pabloAimar {
+  .tecnico .pabloAimar, .historia .pabloAimar {
     flex-direction: column-reverse; }
   .historia section .mundial {
     flex-direction: column; }
@@ -459,11 +469,12 @@ footer {
   main .cards h3 {
     font-size: 50px; }
   footer .footerContainer a h2 {
-    font-size: 20px; }
+    font-size: 1rem;
+    text-align: center; }
   footer .footerContainer ul li a {
-    font-size: 10px; }
+    font-size: 0.8rem; }
   footer .footerContainer div p {
-    font-size: 10px; }
+    font-size: 1rem; }
   .players p {
     font-size: 50px; }
   .players .playersArqueros {

@@ -2,7 +2,7 @@
     background-color:nth($color, 1);
     font-family: "Saira", sans-serif;
     font-style: italic;
-    font-size: 75px;
+    font-size: nth($fontSize, 1);
     color: nth($color, 7);
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     text-align: center;

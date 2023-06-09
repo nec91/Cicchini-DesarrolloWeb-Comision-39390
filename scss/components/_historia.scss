@@ -1,9 +1,5 @@
 .historia {
-    background-color: nth($color, 1);
-    align-items: center;
-    font-family: "Saira", sans-serif;
-    text-align: center;
-
+    @extend .tecnico;
     section {
         padding-bottom: 2%;
     }
@@ -14,17 +10,13 @@
         color: nth($color, 7);
         text-shadow: 0 0 3px #000000, 0 0 5px #000000;
         text-align: center;
-        font-size: 3em;
+        font-size: 3rem;
         padding: 0.5em;
 
     }
 
     .mundial {
-        display: flex;
-        flex-wrap: wrap-reverse;
-        justify-content: space-around;
-        align-items: center;
-
+        @extend .tecnicoFlex;
         div {
             width: 700px;
             height: auto;
@@ -42,14 +34,14 @@
 
             h4 {
                 font-style: normal;
-                font-size: 2em;
+                font-size: 2rem;
                 color: nth($color, 3);
 
             }
 
             p {
                 font-style: normal;
-                font-size: 1em;
+                font-size: 1rem;
                 color: nth($color, 3);
                 padding: 1em;
 

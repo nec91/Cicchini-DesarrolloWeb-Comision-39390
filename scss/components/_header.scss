@@ -8,21 +8,21 @@ header {
         color: nth($color, 9);
         font-family: "Saira", sans-serif;
         font-style: italic;
-        font-size: 30px;
+        font-size: nth($fontSize, 4);;
         margin-left: 20px;
 
         &:hover {
-            color: nth($color, 3);
+            color: nth($color, 12);
             transition: 1s;
         }
     }
 }
 
 .nav-link {
-    color: nth($color, 3);
+    color: nth($color, 12);
     font-family: "Saira", sans-serif;
     font-style: normal;
-    font-size: larger;
+    font-size: nth($fontSize, 5);;
     text-decoration: none;
 
     &:hover {
