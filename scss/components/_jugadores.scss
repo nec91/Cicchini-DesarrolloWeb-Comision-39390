@@ -1,8 +1,8 @@
 .players {
     background-color:nth($color, 1);
     font-family: "Saira", sans-serif;
-    font-style: italic;
-    font-size: nth($fontSize, 1);
+    font-style: normal;
+    font-size: nth($fontSize, 3);
     color: nth($color, 7);
     text-shadow: 0 0 3px #000000, 0 0 5px #000000;
     text-align: center;
