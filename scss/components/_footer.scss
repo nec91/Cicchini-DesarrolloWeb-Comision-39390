@@ -7,12 +7,25 @@ footer {
         padding-top: 2rem;
 
         a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            div {
+                width: 60px;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
             h2 {
                 color: nth($color, 9);
                 font-family: "Saira", sans-serif;
                 font-style: italic;
                 font-size: nth($fontSize, 4);
-
                 &:hover {
                     color: nth($color, 12);
                     transition: 1s;
@@ -23,6 +36,7 @@ footer {
         ul {
             li {
                 margin-bottom: 1rem;
+
                 a {
                     color: nth($color, 12);
                     font-family: "Saira", sans-serif;
@@ -45,15 +59,17 @@ footer {
             p {
                 color: nth($color, 12);
                 font-family: "Saira", sans-serif;
-                font-style: nth($fontSize, 6);;
+                font-style: nth($fontSize, 6);
+                ;
                 font-size: larger;
             }
 
 
             i {
                 color: nth($color, 12);
-                font-size: nth($fontSize, 4);;
-                
+                font-size: nth($fontSize, 4);
+                ;
+
                 &:hover {
                     color: nth($color, 9);
                     transition: 1s;

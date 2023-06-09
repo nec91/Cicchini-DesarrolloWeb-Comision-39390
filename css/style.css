@@ -15,25 +15,37 @@ header {
   position: sticky;
   top: 0;
   z-index: 10; }
-  header h1 {
-    color: #1045b8;
+  header .container-fluid .navbar-brand {
+    display: flex;
+    align-items: center; }
+    header .container-fluid .navbar-brand div {
+      width: 50px;
+      height: auto; }
+      header .container-fluid .navbar-brand div img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    header .container-fluid .navbar-brand h1 {
+      color: #1045b8;
+      font-family: "Saira", sans-serif;
+      font-style: italic;
+      font-size: 2rem;
+      margin-left: 20px; }
+      header .container-fluid .navbar-brand h1:hover {
+        color: #e9e9e9eb;
+        transition: 1s; }
+  header .container-fluid .nav-link {
+    color: #e9e9e9eb;
     font-family: "Saira", sans-serif;
-    font-style: italic;
-    font-size: 2rem;
-    margin-left: 20px; }
-    header h1:hover {
-      color: #e9e9e9eb;
+    font-style: normal;
+    font-size: 1.2rem;
+    text-decoration: none; }
+    header .container-fluid .nav-link:hover {
+      color: #1045b8;
       transition: 1s; }
-
-.nav-link {
-  color: #e9e9e9eb;
-  font-family: "Saira", sans-serif;
-  font-style: normal;
-  font-size: 1.2rem;
-  text-decoration: none; }
-  .nav-link:hover {
-    color: #1045b8;
-    transition: 1s; }
+  header .container-fluid .navbar-toggler {
+    color: #e9e9e9eb;
+    border-color: #e9e9e9eb; }
 
 main .principalImg {
   height: 900px;
@@ -404,14 +416,25 @@ footer {
     display: flex;
     justify-content: space-around;
     padding-top: 2rem; }
-    footer .footerContainer a h2 {
-      color: #1045b8;
-      font-family: "Saira", sans-serif;
-      font-style: italic;
-      font-size: 2rem; }
-      footer .footerContainer a h2:hover {
-        color: #e9e9e9eb;
-        transition: 1s; }
+    footer .footerContainer a {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      footer .footerContainer a div {
+        width: 60px;
+        height: auto; }
+        footer .footerContainer a div img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      footer .footerContainer a h2 {
+        color: #1045b8;
+        font-family: "Saira", sans-serif;
+        font-style: italic;
+        font-size: 2rem; }
+        footer .footerContainer a h2:hover {
+          color: #e9e9e9eb;
+          transition: 1s; }
     footer .footerContainer ul li {
       margin-bottom: 1rem; }
       footer .footerContainer ul li a {
@@ -468,13 +491,15 @@ footer {
 @media screen and (max-width: 880px) {
   main .cards h3 {
     font-size: 50px; }
+  footer .footerContainer a div {
+    width: 40px; }
   footer .footerContainer a h2 {
     font-size: 1rem;
     text-align: center; }
   footer .footerContainer ul li a {
     font-size: 0.8rem; }
   footer .footerContainer div p {
-    font-size: 1rem; }
+    font-size: 0.8rem; }
   .players p {
     font-size: 50px; }
   .players .playersArqueros {
